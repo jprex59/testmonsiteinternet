@@ -1,3 +1,5 @@
+AOS.init();
+
 const button = document.querySelector("button");
 const nav = document.querySelector("nav");
 const backdrop = document.querySelector(".backdrop");
@@ -10,4 +12,3 @@ backdrop.addEventListener("click", () => {
   nav.classList.remove("open");
 });
 
-AOS.init();

@@ -9,3 +9,5 @@ button.addEventListener("click", () => {
 backdrop.addEventListener("click", () => {
   nav.classList.remove("open");
 });
+
+AOS.init();

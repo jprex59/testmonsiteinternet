@@ -95,3 +95,16 @@ body{
     margin-left: 10%;
   }
   
+  @media all and (max-width: 1100px) {
+    #body{
+        background-size: cover;  
+      }    
+    
+      #centrer{
+        margin-top: 100%;
+      }
+      #haut{
+          height: 2100px;
+      }
+
+}

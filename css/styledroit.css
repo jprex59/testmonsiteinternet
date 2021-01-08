@@ -108,3 +108,13 @@ li:hover,
   background-color: darkgreen;
   color: white;
 }
+
+@media all and (max-width: 1100px) {
+  #centrer{
+    margin-top: 100%;
+  }
+  #haut{
+      height: 2100px;
+  }
+
+}

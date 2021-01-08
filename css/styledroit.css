@@ -110,6 +110,12 @@ li:hover,
 }
 
 @media all and (max-width: 1100px) {
+  #body{
+    background-image: url("../images/droit.PNG");
+    background-attachment: fixed;
+   background-size: cover;
+   background-position: center;  
+  }
   #centrer{
     margin-top: 80%;
   }

@@ -161,7 +161,7 @@ button{
   width: 33.3%;
   float: left;
   height:39vw;
-  background-image: url("images/code.PNG");
+  background: url("../images/code.PNG");
   background-size: cover;
   background-position: center;
 }

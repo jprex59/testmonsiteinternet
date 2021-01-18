@@ -365,4 +365,7 @@ ul li a:hover {
   .infoslide1{
     margin-top: 12em;
   }
+  .backdrop{
+    height: 60em;
+  }
 }

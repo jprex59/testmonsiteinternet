@@ -536,12 +536,14 @@ div a {
   .boutong a {
     display: none;
   }
+
+  /*
   .information-bar ul a{
     display: none;
   }
   .menuderoulant{
     display: block;
-  }
+  }*/
 
   .information-bar nav 
 }

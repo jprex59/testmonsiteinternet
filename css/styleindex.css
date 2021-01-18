@@ -8,6 +8,51 @@ body{
   height: 11vh;
 }
 
+.menuresponsive1{
+  display: none;
+  height: 4em;
+  border: solid black;
+  background-color: rgb(8, 72, 92);
+  width: 100%;
+}
+
+.menuresponsive2 ul {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  margin-left: 20%;
+}
+.menuuresponsive2 li {
+  position: relative;
+  display: flex;
+  margin: 0;
+  margin-left: 35%;
+  text-decoration: none;
+}
+.menuresponsive2 a {
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+.menuresponsive2 li {
+  border: solid double white;
+  list-style: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1em;
+  padding: 1em 1.5em;
+  transition: all 0.1s;
+  text-decoration: none;
+  display: inline-table;
+}
+.menuresponsive2{
+  display: none;
+  height: 6em;
+  border: solid black;
+  background-color: rgb(11, 111, 141);
+  width: 100%;
+}
+
 /*----------------------------------------------------*/
 
 .container {
@@ -111,7 +156,7 @@ body{
   width: 33.4%;
   float: left;
   height:38em;
-  background-image: url("../images/test.PNG");
+  background-image: url("../images/test.JPG");
   background-size: cover;
   background-position: left;
 }
@@ -336,6 +381,7 @@ ul li a:hover {
   color: white;
   width: 40%;
   margin-top: 2%;
+  float: right;
 }
 
 .prenom{
@@ -347,6 +393,8 @@ ul li a:hover {
   color: white;
   float: left;
 }
+
+
 /*------------------------------------------------*/
 @media all and (max-width: 1100px) {
   .slide11{
@@ -367,5 +415,14 @@ ul li a:hover {
   }
   .backdrop{
     height: 60em;
+  }
+  .menu{
+    display: none;
+  }
+  .menuresponsive1{
+    display:flex;
+  }
+  .menuresponsive2{
+    display: flex;
   }
 }

@@ -240,6 +240,7 @@ a {
 
 .pharmagest{
   color: blue;
+  white-space: nowrap;
 }
 .pharmagest:hover{
   color: darkblue;

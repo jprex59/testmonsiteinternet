@@ -518,3 +518,30 @@ div a {
   background-size: contain;
   background-repeat: no-repeat;;
 }
+
+@media all and (max-width: 1100px) {
+  
+  .bio{
+      font-size: 10px;
+  }
+  .bouton a{
+    display: none;
+  }
+  .boutonbio a {
+    display: none;
+  }
+  .boutonhaut a{
+    display: none;
+  }
+  .boutong a {
+    display: none;
+  }
+  .information-bar ul a{
+    display: none;
+  }
+  .menuderoulant{
+    display: block;
+  }
+
+  .information-bar nav 
+}

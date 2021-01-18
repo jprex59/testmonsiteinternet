@@ -1,7 +1,7 @@
 body{
     background-image: url("../images/smartcities.PNG");
-   /* background-attachment: fixed;*/
-    /*background-size: cover;*/
+    background-attachment: fixed;
+    background-size: cover;
     background-position: center;  
   }
   h5{

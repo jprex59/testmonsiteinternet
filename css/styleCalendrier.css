@@ -38,15 +38,20 @@ h3 {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  margin-left: 9%;
 }
 
-.container {
+.containerstage {
   height: 538px;
   margin: 0 auto;
   align-content: center;
   top: 50%;
-  width: 510px;
+  width: 800px;
+  position: relative;
+  border: solid white;
 }
+
+
 
 /* ---------- CALENDAR ---------- */
 
@@ -92,6 +97,40 @@ table {
   color: #cbd1d2;
 }
 
+.prev,
+.next {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 16px;
+  border-radius: 0 3px 3px 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  display: block;
+}
+
+.slides {
+  display: none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 10px 2px 0 2px;
+  display: inline-block;
+  background: #ddd;
+  transition: all 0.3s;
+}
+
+.active,
+.dot:hover {
+  background: #717171;
+}
+
 .calendar .prev-month:hover,
 .calendar .next-month:hover {
   border: 2px solid #cbd1d2;
@@ -99,6 +138,27 @@ table {
 
 .current-day {
   background: #00addf;
+  color: #f9f9f9;
+}
+
+.tech{
+  background: #c3e721;
+  color: #f9f9f9;
+  width: 20px;
+}
+
+.hotline{
+    background: #9dcbd8;
+    color: #f9f9f9;
+}
+
+.hotline2{
+  background: #1a8faf;
+  color: #f9f9f9;
+}
+
+.atelier{
+  background: #db754d;
   color: #f9f9f9;
 }
 
@@ -124,32 +184,9 @@ table {
   background: #f9f9f9;
 }
 
-.btn-prev,
-.btn-next {
-  border: 2px solid #cbd1d2;
-  border-radius: 50%;
-  color: #cbd1d2;
-  height: 2em;
-  font-size: .75em;
-  line-height: 2em;
-  margin: -1em;
-  position: absolute;
-  width: 2em;
-}
 
-.btn-prev:hover,
-.btn-next:hover {
-  background: #cbd1d2;
-  color: #f9f9f9;
-}
 
-.btn-prev {
-  left: 6em;
-}
 
-.btn-next {
-  right: 6em;
-}
 
 .boutonbioo {
   opacity: 1;
@@ -249,4 +286,31 @@ a {
 
 Resources1×0.5×0.25×Rerun
 
+.prev,
+.next {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 16px;
+  border-radius: 0 3px 3px 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  display: block;
+}
 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media all and (max-width: 1100px) {
+  .prev, .next{
+    top: 20em;
+  }

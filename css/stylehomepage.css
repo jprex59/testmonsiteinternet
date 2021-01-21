@@ -72,8 +72,6 @@ li {
 li:hover,
 .active {
   color: white;
-  border-bottom: 3px solid #1488fa;
-  width: 100%;
 }
 
 /*--------------image avec info dynamique pour architecture 3 tiers ----------*/

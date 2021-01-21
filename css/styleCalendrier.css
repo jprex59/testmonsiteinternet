@@ -42,13 +42,14 @@ table {
 }
 
 .containerstage {
-  height: 538px;
+  height: 560px;
   margin: 0 auto;
   align-content: center;
   top: 50%;
-  width: 800px;
+  width: 750px;
   position: relative;
   border: solid white;
+  background-color: #ececec;
 }
 
 
@@ -115,6 +116,10 @@ table {
   display: none;
 }
 
+.slidespharmagest {
+ /* display: none;*/
+}
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -125,6 +130,17 @@ table {
   background: #ddd;
   transition: all 0.3s;
 }
+.dotpharmagest{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 10px 2px 0 2px;
+  display: inline-block;
+  background: #ddd;
+  transition: all 0.3s;
+}
+
 
 .active,
 .dot:hover {
@@ -244,6 +260,7 @@ table {
   float: left;
   margin-bottom: 2%;
   text-align: justify;
+  background-color: #ececec;
 }
 a {
   text-decoration: none;
@@ -266,21 +283,53 @@ a {
   font-size: 50px;
   text-decoration: underline overline #FF3028;
 }
-
+.slidespharmagest2{
+  margin-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+  font-family: Arial;
+  background-image: url("../images/pharmagestbio.PNG");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #ececec;
+  height: 30em;
+}
+.slidespharmagest3{
+  margin-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+  font-family: Arial;
+  background-image: url("../images/pharmagestbio.PNG");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #ececec;
+  height: 30em;
+}
 .bioo {
   margin-top: 2%;
   padding-left: 1%;
   padding-right: 1%;
   text-align: justify;
   font-family: Arial;
+  background-image: url("../images/pharmagestbio.PNG");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #ececec;
+  height: 30em;
 }
 
 .pharmagest{
-  color: blue;
+  color: rgb(0, 196, 49);
   white-space: nowrap;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 1%;
 }
 .pharmagest:hover{
-  color: darkblue;
+  color: rgb(255, 255, 255);
   border-radius: 15px;
 }
 
@@ -310,7 +359,36 @@ Resources1×0.5×0.25×Rerun
   background: rgba(0, 0, 0, 0.8);
 }
 
+
+.prevpharmagest,
+.nextpharmagest {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 30em;
+  transform: translate(0, -50%);
+  padding: 16px;
+  border-radius: 0 3px 3px 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  display: block;
+}
+
+.nextpharmagest {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevpharmagest:hover,
+.nextpharmagest:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 @media all and (max-width: 1100px) {
   .prev, .next{
     top: 20em;
   }
+  .containerstage{
+    margin-left: ;
+  }
+}

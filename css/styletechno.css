@@ -3,6 +3,8 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;  
+    background-repeat: no-repeat;
+    overflow: hidden;
   }
   h5{
     color: white;
@@ -19,7 +21,7 @@ body{
   }
   
   .menu{
-    height: 50px;
+    height: 4em;
     width: 100%;
     border: double;
   }
@@ -86,7 +88,7 @@ body{
     height: 200px;
     margin-right: 10%;
   }
-  
+   
   .messd{
     border: solid;
     width: 30%;
@@ -111,11 +113,9 @@ body{
         margin-left: 5%;
         padding-left: 0%;
       }
-      body{
-        background-image: url("../images/smartcities.PNG");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;  
-      }
 
+      .menu li{
+        padding: 0.7em 0.7em;
+      }
+     
 }

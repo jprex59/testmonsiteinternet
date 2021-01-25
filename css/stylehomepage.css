@@ -24,6 +24,11 @@ a {
   background-color: #151728;
 }
 
+.information-bar ul {
+ display: flex;
+}
+
+
 .profile {
   position: absolute;
   display: flex;
@@ -552,13 +557,45 @@ div a {
     color: teal;
   }
 
-  /*
-  .information-bar ul a{
+  .information-bar ul {
     display: none;
-  }
-  .menuderoulant{
-    display: block;
-  }*/
+   }
 
- /* .information-bar nav */
+   .hamburger {
+  }
+
+}
+
+
+
+
+.hamburger {
+  position: absolute;
+  top: 13em;
+  right: 35px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 0.3rem;
+  margin: 0.3rem 0;
+  background-color: #e91e63;
+  border-radius: 5px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 100vh;
+  background-color: #e91e63;
+  transform: translateX(-218px);
+  transition: all .2s;
+}
+
+.sidebar.open {
+  transform: translateX(0);
 }

@@ -7,18 +7,16 @@
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 *[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
-} 
- 
+  font-family: "FontAwesome", sans-serif;
+}
+
 /* ---------- GENERAL ---------- */
 
-body{
-  line-height:1.3em;
-  min-width:920px;
+body {
+  line-height: 1.3em;
   background: #f9f9f9;
   color: #000000;
-  font: 300 100%/1.5em 'Lato', sans-serif;
-  margin: 0;
+  font: 300 100%/1.5em "Lato", sans-serif;
 }
 
 a {
@@ -28,13 +26,13 @@ a {
 h2 {
   font-size: 2em;
   line-height: 1.25em;
-  margin: .25em 0;
+  margin: 0.25em 0;
 }
 
 h3 {
   font-size: 1.5em;
   line-height: 1em;
-  margin: .33em 0;
+  margin: 0.33em 0;
 }
 
 table {
@@ -54,10 +52,7 @@ table {
   background-color: #ececec;
 }
 
-
-
 /* ---------- CALENDAR ---------- */
-
 
 .calendar {
   text-align: center;
@@ -81,7 +76,7 @@ table {
   color: #7c8a95;
 }
 
-.calendar a{
+.calendar a {
   color: black;
 }
 
@@ -123,7 +118,7 @@ table {
 }
 
 .slidespharmagest {
- /* display: none;*/
+  /* display: none;*/
 }
 
 .dot {
@@ -136,7 +131,7 @@ table {
   background: #ddd;
   transition: all 0.3s;
 }
-.dotpharmagest{
+.dotpharmagest {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -146,7 +141,6 @@ table {
   background: #ddd;
   transition: all 0.3s;
 }
-
 
 .active,
 .dot:hover {
@@ -163,23 +157,23 @@ table {
   color: #000000;
 }
 
-.tech{
+.tech {
   background: #c3e721;
   color: #000000;
   width: 20px;
 }
 
-.hotline{
-    background: #9dcbd8;
-    color: #050303;
+.hotline {
+  background: #9dcbd8;
+  color: #050303;
 }
 
-.hotline2{
+.hotline2 {
   background: #1a8faf;
   color: #000000;
 }
 
-.atelier{
+.atelier {
   background: #db754d;
   color: #000000;
 }
@@ -192,23 +186,19 @@ table {
 .event:after {
   background: #00addf;
   border-radius: 50%;
-  bottom: .5em;
+  bottom: 0.5em;
   display: block;
-  content: '';
-  height: .5em;
+  content: "";
+  height: 0.5em;
   left: 50%;
-  margin: -.25em 0 0 -.25em;
+  margin: -0.25em 0 0 -0.25em;
   position: absolute;
-  width: .5em;
+  width: 0.5em;
 }
 
 .event.current-day:after {
   background: #f9f9f9;
 }
-
-
-
-
 
 .boutonbioo {
   opacity: 1;
@@ -247,8 +237,7 @@ table {
   border-width: 0px 0 2px 2px;
 }
 
-
-.slidespharmagest2{
+.slidespharmagest2 {
   margin-top: 2%;
   padding-left: 1%;
   padding-right: 1%;
@@ -260,7 +249,7 @@ table {
   background-color: #ececec;
   height: 30em;
 }
-.slidespharmagest3{
+.slidespharmagest3 {
   margin-top: 2%;
   padding-left: 1%;
   padding-right: 1%;
@@ -285,22 +274,20 @@ table {
   height: 30em;
 }
 
-.pharmagest{
+.pharmagest {
   color: rgb(0, 196, 49);
   white-space: nowrap;
   text-align: center;
   font-size: 2em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 1%;
 }
-.pharmagest:hover{
+.pharmagest:hover {
   color: rgb(255, 255, 255);
   border-radius: 15px;
 }
 
-Resources1×0.5×0.25×Rerun
-
-.prev,
+Resources1×0.5×0.25×Rerun .prev,
 .next {
   cursor: pointer;
   color: white;
@@ -323,7 +310,6 @@ Resources1×0.5×0.25×Rerun
 .next:hover {
   background: rgba(0, 0, 0, 0.8);
 }
-
 
 .prevpharmagest,
 .nextpharmagest {
@@ -349,83 +335,81 @@ Resources1×0.5×0.25×Rerun
   background: rgba(0, 0, 0, 0.8);
 }
 
-
-
 /*****************************************************************************/
-.history-tl-container{
-    font-family: "Roboto",sans-serif;
-  width:65%;
-  margin:auto;
-  display:block;
-  position:relative;
+.history-tl-container {
+  font-family: "Roboto", sans-serif;
+  width: 65%;
+  margin: auto;
+  display: block;
+  position: relative;
 }
-.history-tl-container ul.tl{
-    margin:20px 0;
-    padding:0;
-    display:inline-block;
-
+.history-tl-container ul.tl {
+  margin: 20px 0;
+  padding: 0;
+  display: inline-block;
 }
-.history-tl-container ul.tl li{
-    list-style: none;
-    margin:auto;
-    margin-left:200px;
-    min-height:50px;
-    /*background: rgba(255,255,0,0.1);*/
-    border-left:1px dashed #86D6FF;
-    padding:0 0 50px 30px;
-    position:relative;
+.history-tl-container ul.tl li {
+  list-style: none;
+  margin: auto;
+  margin-left: 200px;
+  min-height: 50px;
+  /*background: rgba(255,255,0,0.1);*/
+  border-left: 1px dashed #86d6ff;
+  padding: 0 0 50px 30px;
+  position: relative;
 }
-.history-tl-container ul.tl li:last-child{ border-left:0;}
-.history-tl-container ul.tl li::before{
-    position: absolute;
-    left: -18px;
-    top: -5px;
-    content: " ";
-    border: 8px solid rgba(255, 255, 255, 0.74);
-    border-radius: 500%;
-    background: #258CC7;
-    height: 20px;
-    width: 20px;
-    transition: all 500ms ease-in-out;
-
+.history-tl-container ul.tl li:last-child {
+  border-left: 0;
 }
-.history-tl-container ul.tl li:hover::before{
-    border-color:  #258CC7;
-    transition: all 1000ms ease-in-out;
+.history-tl-container ul.tl li::before {
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid rgba(255, 255, 255, 0.74);
+  border-radius: 500%;
+  background: #258cc7;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
 }
-ul.tl li .item-title{
+.history-tl-container ul.tl li:hover::before {
+  border-color: #258cc7;
+  transition: all 1000ms ease-in-out;
+}
+ul.tl li .item-title {
   color: #00000098;
 }
-ul.tl li .item-detail{
-    color:rgb(0, 0, 0);
-    font-size:0.8em;
-    text-align: justify;
+ul.tl li .item-detail {
+  color: rgb(0, 0, 0);
+  font-size: 0.8em;
+  text-align: justify;
 }
-ul.tl li .timestamp{
-    color: #000000;
-    position: absolute;
-    width:100px;
-    left: -25%;
-    text-align: right;
-    font-size:0.8em;
+ul.tl li .timestamp {
+  color: #000000;
+  position: absolute;
+  width: 100px;
+  left: -25%;
+  text-align: right;
+  font-size: 0.8em;
 }
 /*****************************************************************************/
 
 @media all and (max-width: 1100px) {
-  .prev, .next{
+  .prev,
+  .next {
     top: 20em;
   }
 
   ul.tl li .timestamp {
     left: -30%;
-}
-.history-tl-container {
-  margin-left: 10%;
-  width: 85%;
-}
+  }
+  .history-tl-container {
+    margin-left: 10%;
+    width: 90%;
+  }
 
-.history-tl-container ul.tl li {
+  .history-tl-container ul.tl li {
     margin-left: 20%;
-
-}
+  }
 }

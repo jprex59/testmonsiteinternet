@@ -579,7 +579,7 @@ div a {
   top: 0;
   left: 0;
   width: 210px;
-  height: 100vh;
+  height: 50em;
   background-color:#151728;;
   transform: translateX(-218px);
   transition: all .2s;

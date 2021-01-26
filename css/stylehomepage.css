@@ -529,46 +529,6 @@ div a {
   background-position: center;
 }
 
-@media all and (max-width: 1100px) {
-  
-  .bio{
-      font-size: 10px;
-  }
-  .bouton a{
-    display: none;
-  }
-  .boutonbio a {
-    display: none;
-  }
-  .boutonhaut a{
-    display: none;
-  }
-  .boutong a {
-    display: none;
-  }
-
-  li{
-    padding-top: 1.5em;
-    padding-left: 0.8em;
-    color: white;
-  }
-
-  li:hover{
-    color: teal;
-  }
-
-  .information-bar ul {
-    display: none;
-   }
-
-   .hamburger {
-  }
-
-}
-
-
-
-
 .hamburger {
   position: absolute;
   top: 13em;
@@ -632,3 +592,54 @@ div a {
 .closehamburger1.open {
   transform: translateX(0);
 }
+
+
+@media all and (max-width: 1100px) {
+  
+  .bio{
+      font-size: 10px;
+  }
+  .bouton a{
+    display: none;
+  }
+  .boutonbio a {
+    display: none;
+  }
+  .boutonhaut a{
+    display: none;
+  }
+  .boutong a {
+    display: none;
+  }
+
+  li{
+    padding-top: 1.5em;
+    padding-left: 0.8em;
+    color: white;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: x-large;
+  } 
+
+  .sidebar{
+    width: 280px;
+    transform: translateX(-290px);
+  }
+
+  .closehamburger1{
+    left: 5em;
+  }
+  li:hover{
+    color: teal;
+  }
+
+  .information-bar ul {
+    display: none;
+   }
+}
+
+
+
+
+
+

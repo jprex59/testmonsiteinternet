@@ -16,7 +16,7 @@ body{
   line-height:1.3em;
   min-width:920px;
   background: #f9f9f9;
-  color: #0e171c;
+  color: #000000;
   font: 300 100%/1.5em 'Lato', sans-serif;
   margin: 0;
 }
@@ -79,6 +79,10 @@ table {
 
 .calendar tbody {
   color: #7c8a95;
+}
+
+.calendar a{
+  color: black;
 }
 
 .calendar tbody td:hover {
@@ -156,28 +160,28 @@ table {
 
 .current-day {
   background: #00addf;
-  color: #f9f9f9;
+  color: #000000;
 }
 
 .tech{
   background: #c3e721;
-  color: #f9f9f9;
+  color: #000000;
   width: 20px;
 }
 
 .hotline{
     background: #9dcbd8;
-    color: #f9f9f9;
+    color: #050303;
 }
 
 .hotline2{
   background: #1a8faf;
-  color: #f9f9f9;
+  color: #000000;
 }
 
 .atelier{
   background: #db754d;
-  color: #f9f9f9;
+  color: #000000;
 }
 
 .event {
@@ -390,13 +394,15 @@ Resources1×0.5×0.25×Rerun
     transition: all 1000ms ease-in-out;
 }
 ul.tl li .item-title{
+  color: #00000098;
 }
 ul.tl li .item-detail{
-    color:rgba(0,0,0,0.5);
-    font-size:1em;
+    color:rgb(0, 0, 0);
+    font-size:0.8em;
+    text-align: justify;
 }
 ul.tl li .timestamp{
-    color: #8D8D8D;
+    color: #000000;
     position: absolute;
     width:100px;
     left: -25%;
@@ -411,6 +417,15 @@ ul.tl li .timestamp{
   }
 
   ul.tl li .timestamp {
-    left: -50%;
+    left: -30%;
+}
+.history-tl-container {
+  margin-left: 10%;
+  width: 85%;
+}
+
+.history-tl-container ul.tl li {
+    margin-left: 20%;
+
 }
 }

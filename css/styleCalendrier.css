@@ -278,7 +278,7 @@ table {
   text-align: justify;
   font-family: Arial;
   background-color: #ececec;
-  height: 36em;
+  height: 37em;
   margin-top: 1%;
 }
 
@@ -481,7 +481,7 @@ ul.tl li .timestamp{
 
 @media all and (max-width: 1230px) {
   .infoslidespharmagest{
-    width: 80%;    
+    width: 70%;    
     height: 28em;
   }
   .videoslide1{
@@ -503,7 +503,7 @@ ul.tl li .timestamp{
     height: 30em;
     }
     .infoslides2pharmagest{
-      width: 80%; 
+      width: 70%; 
       height: 28em;   
     }
 
@@ -517,7 +517,7 @@ ul.tl li .timestamp{
   height: 30em;
   }
   .infoslides3pharmagest{
-    width: 80%; 
+    width: 70%; 
     height: 28em;   
   }
 }

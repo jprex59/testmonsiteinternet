@@ -115,14 +115,4 @@ li:hover,
   }
 }
 
-@media all and (max-width:480px)
-{
 
-body:before {
-  background-image: url("../images/smartcities.PNG");
-  background-attachment: fixed;
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-}

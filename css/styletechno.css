@@ -121,8 +121,8 @@ li:hover,
 body:before {
   background-image: url("../images/smartcities.PNG");
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top;
   background-repeat: no-repeat;
 }
 }

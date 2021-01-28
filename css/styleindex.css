@@ -3,11 +3,85 @@ body {
   padding: 0;
 }
 .menu {
-  background-color: rgb(11, 111, 141);
+  position: relative;
+  margin: auto;
+  /*juste en dessous modifier le width pour modifier la largeur de la bar*/
   width: 100%;
-  height: 11vh;
+  height: 180px;
+  background-size: contain;
+  background-position: center;
+  overflow: hidden;
+}
+.titre{
+  text-align: center;
+  color: white;
+  margin: 0;
+  margin-left: 6em;
+  margin-top: 0.5em;
 }
 
+
+
+.information-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  background-color: #151728;
+}
+
+.information-bar ul {
+ display: flex;
+}
+
+
+.profile {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 20px;
+  left: 25px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #151728;
+}
+
+.name {
+  color: white;
+  margin-left: 0.1em;
+  font-size: 1.4em;
+}
+
+div.information-bar ul {
+  position: relative;
+  width: 65%;
+  display: flex;
+  padding-left: 10em;
+  height: 100%;
+  margin: 0;
+  font-size: 1em;
+}
+
+/*
+div.information-bar ul li{
+  list-style: none;
+  cursor: pointer;
+  color: #d5d5d8;
+  font-size: 1em;
+  text-align: center;
+  transition: all 0.1s;
+  margin-top: 1em;
+}
+
+li:hover,
+.active {
+  color: white;
+}
+*/
 /*----------------------------------------------------*/
 
 .container {
@@ -113,56 +187,38 @@ body {
   background-position: left;
 }
 
-/*************slide 1 image 2********************/
+
 .slide12 {
   /* border: solid;*/
   width: 33.3%;
   float: left;
   height: 38em;
+  background: url("../images/cybersec.PNG");
   background-size: cover;
   background-position: center;
 }
 
-.slide121{
-  width: 100%;
-  height: 40%;
-  background: url("../images/cybersec1.jpg");
-  background-position: bottom;
+.slide13 {
+  /*border: solid;*/
+  width: 33.3%;
+  float: left;
+  height: 38em;
+  background-image:url("../images/code.PNG");
   background-size: cover;
+  background-position: center;
 }
 
-.slide122{
-  width: 100%;
-  height: 20%;
-  background-color: #1a77b6;
-  /*-webkit-filter: blur(1px);*/
-}
 
-.slide123{
-  width: 100%;
-  height: 40%;
-  background: url("../images/cybersec2.jpg");
-  background-position: top;
-  background-size: cover;
-}
-
-.infoslide21 {
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  margin: 0;
-}
-.infoslide22 {
-  margin: 0%;
+.infoslide11 {
+  margin-top: 6%;
   font-family: sans-serif;
   color: white;
   text-align: center;
   text-transform: uppercase;
 }
 
-.coeurslide21 {
-  margin-left: 28%;
+.coeurslide1 {
+  margin-left: 30%;
   text-align: center;
   background-color: rgba(19, 150, 190, 0.315);
   color: white;
@@ -177,26 +233,14 @@ body {
   animation: battement 2s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
-.coeurslide21:hover {
+.coeurslide1:hover {
   background: rgba(35, 133, 172, 0.966);
 }
 
-.coeurslide21 a {
+.coeurslide1 a {
   color: white;
   text-decoration: none;
 }
-/*******************************************************/
-.slide13 {
-  /*border: solid;*/
-  width: 33.3%;
-  float: left;
-  height: 38em;
-  background-image:url("../images/code.PNG");
-  background-size: cover;
-  background-position: center;
-}
-
-
 
 /**/
 .titresection{
@@ -295,7 +339,7 @@ ul li a:hover {
 
 .hamburger {
   position: absolute;
-  top: 1.3em;
+  top: 8em;
   right: 35px;
   cursor: pointer;
   display: block;
@@ -303,7 +347,7 @@ ul li a:hover {
 
 .closehamburger{
   position: absolute;
-  top: 2em;
+  top: 8em;
   right: 35px;
   cursor: pointer;
   display: none;
@@ -358,60 +402,32 @@ ul li a:hover {
   }
 }
 
-/*--------------------------------------*/
-.menuu {
-  color: white;
-  height: 9%;
-  width: 100%;
-  padding-top: 0.1%;
-}
 
-.menuu ul {
-  position: relative;
-  display: flex;
-  margin: 0;
-  margin-left: 35%;
-  text-decoration: none;
-}
-
-.menuu a {
-  margin: 0;
+.titreresponsive{
   color: white;
-  text-decoration: none;
-}
-.menuu li {
-  border: solid double white;
-  list-style: none;
-  cursor: pointer;
-  color: white;
-  font-size: 1.1em;
-  padding: 1em 1.5em;
-  transition: all 0.1s;
-  text-decoration: none;
-  display: inline-table;
-}
-
-.objectif {
-  margin-right: 8%;
-  font-weight: bold;
-  font-size: 22px;
-  text-align: justify;
-  color: white;
-  margin-top: 1em;
-  float: right;
-}
-
-.prenom {
-  margin-left: 2%;
-  font-weight: bold;
-  font-size: 22px;
   text-align: center;
-  margin-top: 1em;
-  color: white;
-  float: left;
+  display: none;
 }
 
+.responsiveinfoslide12{
+  height: 60%;
+}
 /*------------------------------------------------*/
+
+@media all and (max-width: 1270px) {
+  .titre{
+    display: none;
+  }
+  .titreresponsive{
+    display: block;
+  }
+  .responsiveinfoslide12{
+    height: 50%;
+  }
+  .coeurslide1 {
+    margin-left: 25%;
+  }
+}
 @media all and (max-width: 1100px) {
   .slide11 {
     height: 60em;
@@ -427,16 +443,32 @@ ul li a:hover {
     top: 30em;
   }
 
-
+  .infoslide1 {
+    margin-top: 12em;
+  }
   .backdrop {
     height: 60em;
   }
-  .menu {
-      height: 6em;
-      background-color: rgb(11, 111, 141);
-      width: 100%;
+
+  .coeurslide1 {
+    margin-left: 20%;
   }
-  .coeurslide21 {
+  .responsiveinfoslide12{
+    height: 60%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .titre{
+    display: none;
+  }
+  .titreresponsive{
+    display: block;
+  }
+  .responsiveinfoslide12{
+    height: 50%;
+  }
+  .coeurslide1 {
     margin-left: 10%;
   }
 }

@@ -11,7 +11,7 @@ $(document).ready(function(){
 **********************************************************************/
 
 /************Variable pour le menu*************************/
-const button = document.querySelector(".coeurslide21");
+const button = document.querySelector(".coeurslide1");
 const nav = document.querySelector("nav");
 const backdrop = document.querySelector(".backdrop");
 const prev = document.querySelector(".prev");

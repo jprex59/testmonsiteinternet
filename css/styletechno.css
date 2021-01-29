@@ -171,12 +171,20 @@ li:hover,
 /*------------------------------------------------*/
 .presentation{
   background-image: url("../images/smartcities.PNG");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
   height: 65em;
+}
+
+.container{
+  width: 100%;
+  background-color: violet;
 }
 /*****************************************************/
 .gauche {

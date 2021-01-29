@@ -176,7 +176,7 @@ li:hover,
 .gauche {
   float: left;
   height: 200px;
-  margin-left: 20%;
+  margin-left: 5%;
   width: 20%;
   border: solid;
   background-color: cornflowerblue;
@@ -184,7 +184,7 @@ li:hover,
 .droite {
   float: right;
   height: 200px;
-  margin-right: 20%;
+  margin-right: 5%;
   width: 20%;
   border: solid;
   background-color: darkblue;
@@ -192,15 +192,15 @@ li:hover,
 
 .messg {
   border: solid;
-  width: 30%;
+  width: 60%;
   float: right;
   height: 200px;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 .messd {
   border: solid;
-  width: 30%;
+  width: 60%;
   float: left;
   height: 200px;
   margin-left: 10%;

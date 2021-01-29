@@ -11,11 +11,6 @@ h5 {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
 }
-h5:hover {
-  color: white;
-  text-align: center;
-  top: 0;
-}
 
 .centrer{
   height: 30em;
@@ -178,10 +173,6 @@ li:hover,
   height: 65em;
 }
 
-.container{
-  width: 100%;
-  background-color: violet;
-}
 /*****************************************************/
 .gauche {
   float: left;
@@ -257,16 +248,16 @@ li:hover,
    .centrer{
     display: none;
   }
-  
+
 
    
 }
-/*
+
 @media handheld{
   .presentation{
-    background-attachment:unset;
+    background-attachment: initial;
     background-size: contain;
   }
 }
-*/
+
 

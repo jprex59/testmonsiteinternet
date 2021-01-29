@@ -254,6 +254,10 @@ li:hover,
   .information-bar ul {
     display: none;
    }
+   .centrer{
+    display: none;
+  }
+  
 
    
 }

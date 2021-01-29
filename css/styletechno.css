@@ -249,15 +249,11 @@ li:hover,
     display: none;
   }
 
-
-   
-}
-
-@media handheld{
   .presentation{
     background-attachment: initial;
-    background-size: contain;
-  }
+    background-size:initial;
+  }   
 }
+
 
 

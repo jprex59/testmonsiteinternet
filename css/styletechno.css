@@ -251,7 +251,8 @@ li:hover,
 
   .presentation{
     background-attachment: initial;
-    background-size:initial;
+    background-size:cover;
+    height: 80em;
   }   
 }
 

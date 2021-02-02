@@ -251,3 +251,11 @@ li:hover,
     padding: 0.7em 0.7em;
   }
 }
+
+@media (orientation: landscape) and (max-device-width : 640px) {
+  .presentation{
+    background-attachment: initial;
+    background-size:cover;
+    height: 80em;
+    }  
+}

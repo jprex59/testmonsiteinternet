@@ -209,20 +209,13 @@ li:hover,
   height: 200px;
   margin-left: 10%;
 }
-
-@media all and (max-width: 1100px) {
-  .menu ul {
-    margin-left: 5%;
-    padding-left: 0%;
-  }
-
-  .menu li {
-    padding: 0.7em 0.7em;
-  }
-}
-
-
-
+@media all and (max-width: 700px) {
+  .presentation{
+  background-attachment: initial;
+  background-size:cover;
+  height: 80em;
+  }  
+} 
 @media all and (max-width: 1100px) {
   li {
     padding-top: 1.5em;
@@ -249,20 +242,12 @@ li:hover,
     display: none;
    }
 
-   .presentation{
-    background-attachment: initial;
-    background-size:cover;
-    height: 80em;
-  }   
-
-  .gauche{
-    width: 28%;
+   .menu ul {
+    margin-left: 5%;
+    padding-left: 0%;
   }
 
-  .droite{
-    width: 28%;
+  .menu li {
+    padding: 0.7em 0.7em;
   }
 }
-
-
-

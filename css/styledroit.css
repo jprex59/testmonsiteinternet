@@ -209,13 +209,7 @@ li:hover,
   height: 200px;
   margin-left: 10%;
 }
-@media all and (max-width: 700px) {
-  .presentation{
-  background-attachment: initial;
-  background-size:cover;
-  height: 80em;
-  }  
-} 
+
 @media all and (max-width: 1100px) {
   li {
     padding-top: 1.5em;
@@ -250,6 +244,11 @@ li:hover,
   .menu li {
     padding: 0.7em 0.7em;
   }
+  .presentation{
+    background-attachment: initial;
+    background-size:cover;
+    height: 80em;
+    }  
 }
 
 @media (orientation: landscape) and (max-device-width : 640px) {

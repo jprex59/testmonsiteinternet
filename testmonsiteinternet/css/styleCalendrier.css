@@ -1,0 +1,549 @@
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- https://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+*[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+} 
+ 
+/* ---------- GENERAL ---------- */
+
+body{
+  line-height:1.3em;
+  background: #f9f9f9;
+  color: #000000;
+  font: 300 100%/1.5em 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+  margin: .25em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin: .33em 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-left: 9%;
+}
+
+.containerstage {
+  height: 560px;
+  margin: 0 auto;
+  align-content: center;
+  top: 50%;
+  width: 750px;
+  position: relative;
+  border: solid white;
+  background-color: #ececec;
+}
+
+
+
+/* ---------- CALENDAR ---------- */
+
+
+.calendar {
+  text-align: center;
+  display: block;
+}
+
+.calendar header {
+  position: relative;
+}
+
+.calendar h2 {
+  text-transform: uppercase;
+  margin-top: 2%;
+}
+
+.calendar thead {
+  font-weight: 600;
+}
+
+.calendar tbody {
+  color: #7c8a95;
+}
+
+.calendar a{
+  color: black;
+}
+
+.calendar tbody td:hover {
+  border: 2px solid #00addf;
+}
+
+.calendar td {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+  color: #cbd1d2;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 16px;
+  border-radius: 0 3px 3px 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  display: block;
+}
+
+.slides {
+  display: none;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 10px 2px 0 2px;
+  display: inline-block;
+  background: #ddd;
+  transition: all 0.3s;
+}
+.dotpharmagest{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 10px 2px 0 2px;
+  display: inline-block;
+  background: #ddd;
+  transition: all 0.3s;
+}
+
+
+.active,
+.dot:hover {
+  background: #717171;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+  border: 2px solid #cbd1d2;
+}
+
+.current-day {
+  background: #00addf;
+  color: #000000;
+}
+
+.tech{
+  background: #c3e721;
+  color: #000000;
+  width: 20px;
+}
+
+.hotline{
+    background: #9dcbd8;
+    color: #050303;
+}
+
+.hotline2{
+  background: #1a8faf;
+  color: #000000;
+}
+
+.atelier{
+  background: #db754d;
+  color: #000000;
+}
+
+.event {
+  cursor: pointer;
+  /*position: relative;*/
+}
+
+.event:after {
+  background: #00addf;
+  border-radius: 50%;
+  bottom: .5em;
+  display: block;
+  content: '';
+  height: .5em;
+  left: 50%;
+  margin: -.25em 0 0 -.25em;
+  position: absolute;
+  width: .5em;
+}
+
+.event.current-day:after {
+  background: #f9f9f9;
+}
+
+
+
+
+
+.boutonbioo {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.boutonbioo a {
+  float: left;
+  display: contents;
+  margin-top: 2%;
+  margin-left: 44%;
+  padding: 25px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid black;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.boutonbioo a span:before {
+  position: relative;
+  top: calc(50% - 8px);
+  left: calc(50% - 7px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid black;
+  border-width: 0px 0 2px 2px;
+}
+
+.video{
+  display: block;
+  background-position: right;
+  right: 0;
+}
+
+.slidespharmagest2{
+  margin-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+  font-family: sans-serif;
+  background-image: url("../images/pharmagestbio.PNG");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #ececec;
+  height: 37em;
+}
+.slidespharmagest3{
+  margin-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+  font-family: sans-serif;
+  background-image: url("../images/pharmagestbio.PNG");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #ececec;
+  height: 37em;
+}
+.bioo {
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+  font-family: sans-serif;
+  background-color: #ececec;
+  height: 37em;
+  margin-top: 1%;
+}
+
+
+
+.biooresponsive {
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: justify;
+  font-family: sans-serif;
+  background-color: #ececec;
+  height: 36em;
+  margin-top: 1%;
+  display: none;
+}
+
+
+.infoslidespharmagest{
+  float: left;
+  width: 28%;
+  max-height: 36em;
+  text-align: justify;
+  padding: 0.5em;
+}
+/******responsive*********/
+
+.titre{
+  text-align: center;
+  color: #70b121;
+  margin-bottom: 0%;
+}
+
+/******responsive***********/
+
+.infoslides2pharmagest h2{
+  text-align: center;
+  color: #70b121;
+  margin-bottom: 0%;
+}
+
+.infoslides2pharmagest{
+  float: left;
+  width: 28%;
+  height: 36em;
+  text-align: justify;
+  padding: 0.5em;
+}
+
+.infoslides3pharmagest h2{
+  text-align: center;
+  color: #70b121;
+  margin-bottom: 0%;
+}
+
+.infoslides3pharmagest{
+  float: left;
+  width: 28%;
+  height: 36em;
+  text-align: justify;
+  padding: 0.5em;
+}
+
+.infoslides3pharmagest a{
+  color: #70b121;
+}
+
+.servicespharmagest{
+  color: #70b121;
+  font-size: 1em;
+}
+
+.pharmagest{
+  color: rgb(0, 196, 49);
+  white-space: nowrap;
+  text-align: center;
+  font-size: 2em;
+  font-family: sans-serif;
+  margin-top: 1%;
+}
+.pharmagest:hover{
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+
+
+.prev,
+.next {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 16px;
+  border-radius: 0 3px 3px 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  display: block;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+.prevpharmagest,
+.nextpharmagest {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 30em;
+  transform: translate(0, -50%);
+  padding: 16px;
+  border-radius: 0 3px 3px 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  display: block;
+}
+
+.nextpharmagest {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevpharmagest:hover,
+.nextpharmagest:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/*****************************************************************************/
+.history-tl-container{
+  font-family: sans-serif;
+  width:65%;
+  margin:auto;
+  display:block;
+  position:relative;
+}
+.history-tl-container ul.tl{
+    margin:20px 0;
+    padding:0;
+    display:inline-block;
+
+}
+.history-tl-container ul.tl li{
+    list-style: none;
+    margin:auto;
+    margin-left:200px;
+    min-height:50px;
+    /*background: rgba(255,255,0,0.1);*/
+    border-left:1px dashed #151728;
+    padding:0 0 50px 30px;
+    position:relative;
+}
+.history-tl-container ul.tl li:last-child{ border-left:0;}
+.history-tl-container ul.tl li::before{
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 0.74);
+    border-radius: 500%;
+    background: #151728;
+    height: 20px;
+    width: 20px;
+    transition: all 500ms ease-in-out;
+
+}
+.history-tl-container ul.tl li:hover::before{
+    border-color:  #1517287e;
+    transition: all 1000ms ease-in-out;
+}
+ul.tl li .item-title{
+  color: #00000098;
+}
+ul.tl li .item-detail{
+    color:rgb(0, 0, 0);
+    font-size:0.8em;
+    text-align: justify;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+ul.tl li .timestamp{
+    color: #000000;
+    position: absolute;
+    width:92px;
+    left: -25%;
+    text-align: right;
+    font-size:0.8em;
+}
+/*****************************************************************************/
+
+
+@media all and (max-width: 1230px) {
+  .infoslidespharmagest{
+    width: 70%;    
+    height: 28em;
+  }
+  .videoslide1{
+    display: none;
+  }
+  .bioo{
+    background-image: url("../images/pharmagestbio.PNG");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 30em;
+    }
+    .videoslide2{
+      display: none;
+    }
+    .slidespharmagest2{
+    background-image: url("../images/pharmagestbio.PNG");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 30em;
+    }
+    .infoslides2pharmagest{
+      width: 70%; 
+      height: 28em;   
+    }
+
+  .videoslide3{
+    display: none;
+  }
+  .slidespharmagest3{
+  background-image: url("../images/pharmagestbio.PNG");
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 30em;
+  }
+  .infoslides3pharmagest{
+    width: 70%; 
+    height: 28em;   
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .prev, .next{
+    top: 20em;
+  }
+
+  ul.tl li .timestamp {
+    left: -30%;
+}
+  .history-tl-container {
+  margin-left: 5%;
+  width: 90%;
+  }
+  .responsiveli li{
+  padding-top: 1.5em;
+  padding-left: 0.8em;
+  color: white;
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: x-large;
+  }
+
+  .history-tl-container ul.tl li {
+    margin-left: 20%;
+  }
+}

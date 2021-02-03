@@ -16,6 +16,7 @@
   }
   a {
     text-decoration: none;
+    color: white;
   }
   
   .information-bar {
@@ -63,13 +64,11 @@
     font-family: sans-serif;
   }
   
-  .a {
-    margin: 0;
-  }
+ 
   li{
     list-style: none;
     cursor: pointer;
-    color: #d5d5d8;
+    color: #ffffff;
     font-size: 1.1em;
     padding-top: 1.5em;
     padding-left: 1em;

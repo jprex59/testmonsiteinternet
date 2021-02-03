@@ -66,9 +66,9 @@ footer{
   
   @media all and (max-width: 900px) {
   footer ul{
-    width: 47%;
+    width: 40%;
   }
   .center{
-    width: 50%;
+    width: 40%;
   }
   }

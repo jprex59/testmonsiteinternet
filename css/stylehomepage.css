@@ -5,8 +5,87 @@ body{
 }
 
 /****************************menudoc*******************************************/
+.card {
+  display:flex;
+  flex-direction:column;
+  align-items:center;      
+  cursor:pointer;   
+}
 
-.menudoc{
+.card__wrapper{    
+  height: 12em;
+  width: 13em;
+  margin: 1em;
+  position:relative;   
+}
+.card__image{  
+  width:100%;
+  height:100%; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  transition: all .2s;  
+  position: relative;
+}
+.card__image--cobian{
+  background-image: url('../images/cobian.JPG');
+}
+.card__image--3tiers{
+  background-image: url('../images/arch3tiers.PNG');
+}
+.card__image--eon{
+  background-image: url('../images/eon.jpg');
+}
+.card__image--ad{
+  background-image: url('../images/ad.jpg');
+}
+.card__image--dns{
+  background-image: url('../images/dns.jpg');
+}
+.card__image--dhcp{
+  background-image: url('../images/dhcp.png');
+}
+.card__image--nlb{
+  background-image: url('../images/nlb.png');
+}
+.card__image--avoir{
+  background-image: url('../images/avoir.png');
+}
+
+.card__link{     
+  margin-top:.5rem;
+  margin-right:2rem;
+  color: white;
+  border-radius: 25% 10%;
+  background-color: #204998;  
+  padding: .5rem;
+  margin-bottom: 5%;
+}
+
+.card__title{
+  display:block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%); 
+  color:#fff;
+  font-size:30px;  
+  text-transform:uppercase; 
+  width: 90%;
+  opacity:0;
+  text-align: center;
+}
+
+.card:hover .card__image{
+  filter: blur(5px) brightness(0.6);
+}
+.card:hover .card__title {
+  opacity:1;
+}
+
+
+.container{
   margin: auto;
   width: 98%;
   background-color: #eaeaea;
@@ -16,101 +95,21 @@ body{
   background-size: 200px;
 }
 
-.containermenudoc{
+.container--responsive{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin:  auto;
-  width: 80%;
-  height: 100%;
+  width: 70%;
 }
 
-.card{
-  height: 12em;
-  width: 13em;
-  margin: 2em;
-  cursor: pointer;
-}
-
-.card a{
-  margin: auto;
-  text-align: center;
-  color: white;
-  border-radius: 25% 10%;
-  background-color: #204998;
-  width: max-content;
-  padding: 7px;
-}
-
-.cardmenudoc{
+.container--title{
   width: 100%;
-  height: 90%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 17px;
-  transition: all 0.2s;
-  z-index: 1;
-  margin-bottom: 4%;
-  position: relative;
-}
-
-.cardmenudoc p{
-  font-size: 0;
   text-align: center;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  position: fixed;
+  margin: 1em;
+  text-transform: uppercase;
 }
-
-.cardmenudoc p:hover{
-  font-size: 40px;
-
-}
-
-.cardmenudoc:hover{
-  filter: blur(5px);
-}
-
-.cobian{
-  background-image: url('../images/cobian.JPG');
-}
-.eon{
-  background-image: url('../images/eon.jpg');
-}
-
-.nlb{
-  background-image: url('../images/nlb.png');
-  background-size: 205px;
-  background-position: center;
-}
-.ad{
-  background-image: url('../images/ad.jpg');
-  background-size: 230px;
-  background-position: center;
-}
-
-.dns{
-  background-image: url('../images/dns.jpg');
-}
-
-.dhcp{
-  background-image: url('../images/dhcp.png');
-}
-
-.avoir{
-  background-image: url('../images/avoir.png');
-}
-
-.arch3tiers{
-  background-image: url('../images/arch3tiers.PNG');
-  background-size: 270px;
-  background-position: center;
-}
-
-
 /*--------------image avec info dynamique pour architecture 3 tiers ----------*/
 
 .cardarch {
@@ -565,7 +564,18 @@ div a {
 }
 
 
+@media all and (max-width: 1350px) {
+  .container--responsive{
+    width: 80%;
+  }
+}
 
+
+@media all and (max-width: 1245px) {
+  .container--responsive{
+    width: 98%;
+  }
+}
 
 @media all and (max-width: 1100px) {
   .bouton a{
@@ -609,29 +619,32 @@ div a {
    }
    .espacebio{
      display: none;
-   }
-   .containermenudoc{
-    width: 100%;
-    margin: 0;
-  }
-  
-   
+   }   
 }
 
+@media all and (max-width: 1020px) {
+  
+  .container--responsive{
+    width: 70%;
+  }
+}
 
 @media all and (max-width: 800px) {
   
   .bio{
       font-size: 0.7em;
   }
-
-  .menudoc h1{
-    font-size: 15px;
+  .container--responsive{
+    width: 100%;
   }
 }
 
-
-
-
-
-
+@media all and (max-width: 800px) {
+  
+  .bio{
+      font-size: 0.7em;
+  }
+  .container--responsive{
+    width: 90%;
+  }
+}

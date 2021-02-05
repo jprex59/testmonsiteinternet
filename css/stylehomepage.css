@@ -4,6 +4,111 @@ body{
   padding: 0;
 }
 
+/****************************menudoc*******************************************/
+
+.menudoc{
+  margin: auto;
+  width: 98%;
+  background-color: #eaeaea;
+  background-image: url('../images/windowsserver.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 200px;
+}
+
+.containermenudoc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:  auto;
+  width: 80%;
+  height: 100%;
+}
+
+.card{
+  height: 12em;
+  width: 13em;
+  margin: 2em;
+  cursor: pointer;
+}
+
+.card a{
+  margin: auto;
+  text-align: center;
+  color: white;
+  border-radius: 25% 10%;
+  background-color: #204998;
+  width: max-content;
+  padding: 7px;
+}
+
+.cardmenudoc{
+  width: 100%;
+  height: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 17px;
+  transition: all 0.2s;
+  z-index: 1;
+  margin-bottom: 4%;
+  position: relative;
+}
+
+.cardmenudoc p{
+  font-size: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+}
+
+.cardmenudoc p:hover{
+  font-size: 40px;
+
+}
+
+.cardmenudoc:hover{
+  filter: blur(5px);
+}
+
+.cobian{
+  background-image: url('../images/cobian.JPG');
+}
+.eon{
+  background-image: url('../images/eon.jpg');
+}
+
+.nlb{
+  background-image: url('../images/nlb.png');
+  background-size: 205px;
+  background-position: center;
+}
+.ad{
+  background-image: url('../images/ad.jpg');
+  background-size: 230px;
+  background-position: center;
+}
+
+.dns{
+  background-image: url('../images/dns.jpg');
+}
+
+.dhcp{
+  background-image: url('../images/dhcp.png');
+}
+
+.avoir{
+  background-image: url('../images/avoir.png');
+}
+
+.arch3tiers{
+  background-image: url('../images/arch3tiers.PNG');
+  background-size: 270px;
+  background-position: center;
+}
 
 
 /*--------------image avec info dynamique pour architecture 3 tiers ----------*/
@@ -505,6 +610,11 @@ div a {
    .espacebio{
      display: none;
    }
+   .containermenudoc{
+    width: 100%;
+    margin: 0;
+  }
+  
    
 }
 
@@ -513,6 +623,10 @@ div a {
   
   .bio{
       font-size: 0.7em;
+  }
+
+  .menudoc h1{
+    font-size: 15px;
   }
 }
 

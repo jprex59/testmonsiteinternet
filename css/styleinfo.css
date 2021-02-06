@@ -5,147 +5,102 @@ body {
 }
 
 .container {
-    margin-top: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.box {
-    border-radius: 16px;
-    width: 48%;
+.card {
+    border-radius: 10px;
+    margin: 0;
+    width: 50%;
     height: 25em;
-    max-width: 100%;
-    min-height: 25em;
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
-    /* background-color: rgb(238, 228, 228);*/
     overflow: hidden;
+    background-size: cover;
 }
 
 .info {
-    z-index: 1;
     position: relative;
     width: 100%;
-    height: 25em;
-    background-color: rgb(238, 228, 228);
-    transform: translateY(100%) translateY(-88px) translateZ(0);
-    transition: transform 0.4s ease-out;
+    height: 500px;
+    background-color: #fff;
+    transform: translateY(100%) translateY(0px) translateZ(0);
+    transition: transform 0.3s ease-out;
 }
 
 .info:before {
     z-index: -1;
     display: block;
     position: absolute;
-    content: "";
+    content: ' ';
     width: 100%;
     height: 100%;
     overflow: hidden;
-    filter: blur(10px);
-    opacity: 1s;
+    /*background-image: url(https://cdn.pixabay.com/photo/2019/04/20/11/39/japan-4141578_960_720.jpg);
+    filter: blur(80px);
+    background-size: cover;*/
+    opacity: 0.25;
     transform: translateY(-100%) translateY(88px) translateZ(0);
     transition: transform 0.3s ease-out;
 }
 
-.infocertif {
-    background-color: #1c203ab7;
-    color: white;
+.News {
+    background-image: url('../images/news.png');
+    background-position: center;
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-color: #00adef;
 }
 
-.infonews {
-    background-color: #1c203ab7;
-    color: white;
+.certifications {
+    background-image: url('../images/certifs.png');
+    background-position: center;
+    background-size: 380px;
+    background-repeat: no-repeat;
+    background-color: #009edd;
 }
 
-.infocompétences {
-    background-color: #1c203ab7;
-    color: white;
+.jesaispas {
+    background-image: url('../images/jesaispas.png');
+    background-position: center;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-color: #0080b3;
 }
 
-.infoaides {
-    background-color: #1c203ab7;
-    color: white;
+.aides {
+    background-image: url('../images/sources.png');
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-color: #00709c;
 }
 
-
-/*******************title************************/
-
-.titleNews {
-    border-radius: 16px;
-    height: 25em;
-    max-width: 100%;
-    min-height: 25em;
-    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
-    /* background-color: rgb(238, 228, 228);*/
-    background-color: rgb(179, 213, 245);
-    z-index: 1;
+.container--alignement {
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
-.titleCertifs {
-    border-radius: 16px;
-    height: 25em;
-    max-width: 100%;
-    min-height: 25em;
-    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
-    /* background-color: rgb(238, 228, 228);*/
-    background-color: rgb(130, 190, 247);
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.title {
+    margin: 0;
+    padding: 24px;
+    font-size: 40px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
 }
 
-.titleCompétences {
-    border-radius: 16px;
-    height: 25em;
-    max-width: 100%;
-    min-height: 25em;
-    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
-    /* background-color: rgb(238, 228, 228);*/
-    background-color: rgb(99, 177, 250);
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.titleAides {
-    border-radius: 16px;
-    height: 25em;
-    max-width: 100%;
-    min-height: 25em;
-    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
-    /* background-color: rgb(238, 228, 228);*/
-    background-color: rgb(99, 177, 250);
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/***********************************************/
-
-.box p {
+.description {
     margin: 0;
     padding: 0 24px 24px;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.5;
-    text-align: justify;
 }
 
-.box:hover .info,
-.box:hover .info:before {
+.card:hover .info,
+.card:hover .info:before {
     transform: translateY(0) translateZ(0);
 }
-
-.news {}
-
-.certifications {}
-
-.compétences {}
-
-.aides {}

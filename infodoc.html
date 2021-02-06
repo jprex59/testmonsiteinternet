@@ -5,8 +5,8 @@ par exemple comment installer les différents services DHCP, IIS (serveur web), 
 également appris lors des cours de programmation à coder un site internet simple avec la mise en place d’un CRUD connecté à une base de données mais aussi le langage C et Python.
 <br><br>Au cours de ma 2e année de BTS en réseau nous avons mis en place progressivement en équipe de 2 une architecture avec 3 réseaux distincts :<br>- Une DMZ en 10.0.3.0 /24 avec comme passerelle par défaut 10.0.3.254 /24
 <br>- Un Lan en 172.16.3.0 /24 avec comme passerelle par défaut 172.16.3.254 /24<br>- Un Wan en 192.168 avec comme passerelle par défaut 192.168.3.243 /24<br> le tout connecté à un routeur Zyxel à 3 pattes faisant aussi firewall. Le tout est sécurisé
-par des Vlans que nous n'avons pas configuré mais qu'on a pu tester par nous même en lignes de commandes avec des Switch Cisco et avec l'interface graphique d'un Switch HP.<br><br> Le but de monter cette architecture est de découvrir les différents
-
+par des Vlans que nous n'avons pas configuré mais qu'on a pu tester par nous même en lignes de commandes avec des Switch Cisco et avec l'interface graphique d'un Switch HP.<br><br> Le but de monter cette architecture est de découvrir les différents services
+évoqués avant mais aussi de voir les principes de sécurité qui en découlent comme : La QOS (Quality Of Services, La tolérance de panne, Le PSI (Plan De Sécurité Informatique), La haute disponibilité.
 <!--------------------------------------------------------------Architecture 3 Tiers------------------------------------------------------------->
 Prérequis : - Un Windows serveur (web) avec IIS + PHP (même version que le site) installé avec webplateform installer @IP : 10.0.3.101 - Un Windows serveur (SGBD) avec MYSQL installé avec webplateform installer + PHPMYADMIN ou NAVICAT (payant) IP : 10.0.3.100
 - une machine cliente Windows 10 @IP : 10.0.3.50 Nous avons mis en place une architecture 3 tiers (avec une machine cliente et 2 serveurs) afin de comprendre comment héberger un site internet en dédiant un service pour chaque serveur. Concernant les services

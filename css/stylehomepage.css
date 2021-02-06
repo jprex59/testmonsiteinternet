@@ -561,9 +561,10 @@ div a {
 .visio{
   background-image: url('../images/Visio\ infra\ bts\ 2e\ année\ verticale.png');
   background-position: center;
-  margin-left: 5%;
   margin-bottom: 5%;
+  margin-top: 5%;
   background-size: contain;
+  height: 50em;
 }
 .informations p{
   padding: 0.5em;

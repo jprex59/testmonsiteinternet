@@ -588,3 +588,9 @@ h5{
         margin-bottom: 0;
     }
 }
+
+@media all and (max-width: 718px) {
+  .container--responsive {
+    width: 100%;
+  }
+}

@@ -4,103 +4,104 @@ body {
     font-family: sans-serif;
 }
 
-.container {
+.container{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.card {
-    border-radius: 10px;
-    margin: 0;
+.container--section{
+    height: 28em;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    border-top-right-radius: 5%;
+    color: white;
+    text-align: justify;
     width: 50%;
-    height: 25em;
-    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    background-size: cover;
 }
 
-.info {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-color: #fff;
-    transform: translateY(100%) translateY(0px) translateZ(0);
-    transition: transform 0.3s ease-out;
+.section1{
+   background-color: #0c2461;
 }
 
-.info:before {
-    z-index: -1;
-    display: block;
-    position: absolute;
-    content: ' ';
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /*background-image: url(https://cdn.pixabay.com/photo/2019/04/20/11/39/japan-4141578_960_720.jpg);
-    filter: blur(80px);
-    background-size: cover;*/
-    opacity: 0.25;
-    transform: translateY(-100%) translateY(88px) translateZ(0);
-    transition: transform 0.3s ease-out;
+.section2{
+    background-color: #1e3799;
 }
 
-.News {
-    background-image: url('../images/news.png');
-    background-position: center;
-    background-size: 180px;
-    background-repeat: no-repeat;
-    background-color: #00adef;
-}
-
-.certifications {
-    background-image: url('../images/certifs.png');
-    background-position: center;
-    background-size: 380px;
-    background-repeat: no-repeat;
-    background-color: #009edd;
-}
-
-.jesaispas {
-    background-image: url('../images/jesaispas.png');
-    background-position: center;
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-color: #0080b3;
-}
-
-.aides {
-    background-image: url('../images/sources.png');
-    background-position: center;
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-color: #00709c;
-}
-
-.container--alignement {
+.section3{
+    background-color: #4a69bd;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    text-align: left;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
-.title {
+.section4{
+    background-color: #6a89cc;
+}
+h1{
+    text-transform: uppercase;
+    border-left: 4mm ridge rgb(161, 40, 40);
     margin: 0;
-    padding: 24px;
-    font-size: 40px;
-    line-height: 1;
-    color: rgba(0, 0, 0, 0.87);
-    text-align: center;
+    padding: 10px;
+    margin-left: 25px;
 }
 
-.description {
+.section3 h1{
+    width: -webkit-fill-available;
+}
+
+h3{
+    text-transform: uppercase;
+    border-left: solid 4px black ;
+    padding: 5px;
     margin: 0;
-    padding: 0 24px 24px;
-    font-size: 18px;
-    line-height: 1.5;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+h5{
+    text-transform: uppercase;
+    border-left: solid 4px black ;
+    padding: 5px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 4%;
 }
 
-.card:hover .info,
-.card:hover .info:before {
-    transform: translateY(0) translateZ(0);
+.container--section p{
+    margin-left: 40px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.container--section a{
+    color: rgb(165, 22, 22);
+    transition: all 1s;
+    font-weight: bold;
+}
+
+.container--section a:hover{
+    text-decoration: underline white;
+}
+.container--section ul{
+    cursor:initial;
+    width: 15em;
+}
+.container--section ul li{
+    margin: 0;
+    padding: 0;
+}
+
+.section3 h5{
+    margin-left: 0px;
+    margin-bottom: 5%;
+}
+
+@media all and (max-width : 1136px){
+    .container--section{
+        width: 100%;
+    }
+    .container--section ul{
+        width: auto;
+    }
 }

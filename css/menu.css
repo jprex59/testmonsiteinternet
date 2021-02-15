@@ -209,7 +209,7 @@ li:hover,
 @media all and (max-width: 850px) {
     .sidebar {
         width: 75%;
-        transform: translateX(-600px);
+        transform: translateX(-700px);
     }
     .closehamburger1 {
         left: 13em;

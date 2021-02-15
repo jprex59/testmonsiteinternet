@@ -109,7 +109,7 @@ li:hover,
     font-size: -webkit-xxx-large;
     position: absolute;
     top: 0.5em;
-    left: 10em;
+    left: 11em;
     cursor: pointer;
     transform: translateX(-20em);
     transition: all .5s;
@@ -131,13 +131,13 @@ li:hover,
     position: absolute;
     top: 0;
     left: 0;
-    height: 35em;
-    width: 450px;
+    height: 100%;
+    width: 500px;
     background-color: #212121;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    transform: translateX(-450px);
+    transform: translateX(-500px);
     transition: all .4s;
 }
 
@@ -145,11 +145,15 @@ li:hover,
     transform: translateX(0);
 }
 
+.espace {
+    height: 3%;
+}
+
 .onglet {
     transition: linear all 0.3s;
     height: auto;
     margin-left: 30px;
-    font-size: 30px;
+    font-size: 40px;
     padding: 10px;
 }
 
@@ -204,7 +208,7 @@ li:hover,
 
 @media all and (max-width: 850px) {
     .sidebar {
-        width: 70%;
+        width: 75%;
         transform: translateX(-600px);
     }
     .closehamburger1 {
@@ -220,7 +224,7 @@ li:hover,
 
 @media all and (max-width: 750px) {
     .closehamburger1 {
-        left: 11em;
+        left: 12em;
     }
 }
 

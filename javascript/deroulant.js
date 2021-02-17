@@ -70,7 +70,7 @@ body.addEventListener('touchmove', a => {
 
 
 body.addEventListener('touchend', a => {
-  if (touchEndd - touchStartt > 100 ) {
+  if (touchEndd - touchStartt > 250 ) {
     sidebar.classList.add('open');
     closesidebar.classList.add('open');
      icon.style.display = 'none';
@@ -98,7 +98,7 @@ body.addEventListener('touchmove', e => {
 });
 
 body.addEventListener('touchend', e => {
-  if (touchStart - touchEnd > 100 ) {
+  if (touchStart - touchEnd > 250 ) {
     sidebar.classList.remove('open');
     icon.style.display = 'block';
     closesidebar2.style.display = 'none';

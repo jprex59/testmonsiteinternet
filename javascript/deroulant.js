@@ -16,7 +16,6 @@ const timeline = document.querySelector('.history-tl-container');
 let touchStart, touchEnd;
 let touchStartt, touchEndd;
 
-
 /***********************sticky***************/
 // detecter lorsqu'on scroll
 window.onscroll = function() { sticky() };
@@ -52,6 +51,7 @@ function sticky() {
       });
     }
 }
+
 
 
 /***************************************Enlever les elements qui font buguer quand je clic pour ouvrir le menu****************************************** */

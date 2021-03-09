@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.5" />
     <link rel="stylesheet" href="./css/footer.css" type="text/css" />
     <script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
 </head>
 
 <body>
@@ -179,6 +181,49 @@
     <!----------------->
     <div style="clear: both; width: 100%;height: 2em;"></div>
 
+
+
+    <!----------------------------------PowerShell--------------------------->
+    <pre>
+        <code class="PowerShell">
+            # Script pour enregistrer des utilisateurs dans AD
+            # version 1.0
+            # Auteur : JEAN PARIS
+            
+            
+            #Activation du module AD
+            Import-Module ActiveDirectory
+            
+            
+            #Force le type d'execution
+            Set-ExecutionPolicy Unrestricted
+            
+            #mettre comme quoi le module AD est chargé
+            
+            Write-Host "Module ActiveDirectory chargé !"
+            
+            #ici on récupère le fichier avec les utilisateurs a ajouter dans l'AD
+            
+            $file=Read-Host -Prompt "Saisir le nom du fichier à importer"
+            $users=Import-CSV $file
+            
+            #on récupère chaque information dans le fichier ligne par ligne pour creer un utilisateur grâce aux fonctions et on passe une ligne pour recommencer
+            
+            Import-CSV -Delimiter ";" -Path .\users.csv | ForEach-Object {
+               $name = $_.Prenom  
+               $surname = $_.Nom
+               $department = $_.Ligue
+               $displayname = "$name $surname"
+               
+                  New-ADUser -Name $displayname -GivenName $name -Surname $surname -DisplayName $displayname -department $department -AccountPassword (ConvertTo-SecureString "P@ssw0rd" -AsPlainText -force) -Enabled $true
+                  Write-Host "Création de $displayname : Prénom=$name Nom=$surname Ligue=$ligue Fichier source=$file"
+            }
+        </code>
+    </pre>
+
+
+
+    <div style="clear: both; width: 100%;height: 2em;"></div>
     <footer>
         <ul>
           <li class="titlefooter">About Me</li>
@@ -221,6 +266,9 @@
       </footer>
     <!-------------------------------------------------------------------- dernière div avant de sortir du cadre de la page------------------------------------------------------->
     <script src="./javascript/deroulant.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 </body>
 

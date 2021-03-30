@@ -18,7 +18,6 @@
     font-family: sans-serif;
     flex-wrap: wrap;
     margin: 30px;
-    width: 100%;
 }
 
 .modal_content p{
@@ -84,7 +83,6 @@
     visibility: visible;
     opacity: 1;
     z-index: 99999;
-    height: 100vh;
     position: fixed;
   }
 
@@ -92,7 +90,7 @@
     border-radius: 4px;
     position: relative;
     width: 600px;
-    max-width: 70%;
+    max-width: 80%;
     background: white;
     padding: 1.5em 2em;
   }
@@ -112,6 +110,7 @@ body{
   background: #f9f9f9;
   color: #000000;
   font: 300 100%/1.5em 'Lato', sans-serif;
+  min-width: 750px;
 }
 
 a {
@@ -410,5 +409,17 @@ ul.tl li .timestamp{
 
   .history-tl-container ul.tl li {
     margin-left: 20%;
+  }
+}
+
+
+
+@media all and (max-width: 600px) {
+  .modal_content{
+    width: 95%;
+    max-width: 95%;
+  }
+  .modal_content p{
+    font-size: 0.8em;
   }
 }

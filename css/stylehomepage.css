@@ -131,10 +131,12 @@ body {
     background-size: 100px;
     background-color: #eaeaea;
     display: flex;
+    align-items: center;
 }
 
 .informations p {
-    margin-top: 3em;
+    margin: 10px;
+    margin-top: 2em;
     text-align: justify;
     width: 88%;
     padding: 1em;

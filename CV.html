@@ -76,7 +76,20 @@
     </div>
 
     <!----------------------------------------------------------------------------------------->
-    <div style="width: 100%; height: 200px;"></div>
+
+    <div style="width: 100%; height: 200px; display: flex; justify-content: center; align-items: center;">
+
+        <span id="cv_interactif" style="display: none; justify-content: center; align-items: center; flex-direction: column;"">
+            <p style="font-size: 20px;">
+                [CV avec accés aux liens] Votre taille d'écran le permet, si vous le souhaitez, acceptez et vous pourrez accéder aux liens
+            </p>
+        <span>
+            <button class="button_interactif" onclick="animation()">OUI</button>
+            <button class="button_interactif" onclick="noanimation()">NON</button>
+        </span>
+        </span>
+    </div>
+
     <div class="container">
         <!----Iframe---->
 

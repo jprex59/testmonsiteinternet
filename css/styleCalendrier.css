@@ -23,6 +23,28 @@
 .modal_content p{
   text-align: justify;
 }
+.container_company a h4{
+  font-size: 17px;
+  background-color: #f3f3f3;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.modal_link{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: #151728;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  float: right;
+  transition: all .5s;
+}
+
+.modal_link:hover{
+  color: black;
+  background-color: #ececec;
+}
 
 .button_modal{
   width: 335px;
@@ -38,7 +60,6 @@
   background-position: center;
   background-size: 210px;
   background-repeat: no-repeat;
-  background-color: #ececec;
 }
 
 .group{
@@ -46,7 +67,6 @@
   background-position: center;
   background-size: 190px;
   background-repeat: no-repeat;
-  background-color: #ececec;
 }
 
 .service{
@@ -54,7 +74,6 @@
   background-position: center;
   background-size: 230px;
   background-repeat: no-repeat;
-  background-color: #ececec;
 }
 
 .skills{
@@ -62,7 +81,6 @@
   background-position: center;
   background-size: 230px;
   background-repeat: no-repeat;
-  background-color: #ececec;
 }
 
 .modal_a {
@@ -71,7 +89,14 @@
     border-radius: 5px;
     text-transform: uppercase;
     color: black;
+    transition: all .5s;
+    background-color: #ececec;
   }
+
+.modal_a:hover {
+  background-size: 280px;
+  background-color: #c0c0c0;
+}
 
   .modal {
     visibility: hidden;

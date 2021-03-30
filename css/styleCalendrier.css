@@ -90,9 +90,10 @@
     border-radius: 4px;
     position: relative;
     width: 600px;
-    max-width: 80%;
+    max-width: 90%;
     background: white;
     padding: 1.5em 2em;
+    margin: 25px;
   }
   
   .modal_close {
@@ -414,12 +415,8 @@ ul.tl li .timestamp{
 
 
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
   .modal_content{
     width: 95%;
-    max-width: 95%;
-  }
-  .modal_content p{
-    font-size: 0.8em;
   }
 }

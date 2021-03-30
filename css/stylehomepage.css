@@ -130,6 +130,7 @@ body {
     background-position: top right;
     background-size: 100px;
     background-color: #eaeaea;
+    display: flex;
 }
 
 .informations p {
@@ -197,7 +198,7 @@ body {
     border-radius: 0;
     border: none;
 }
-.contexts_TP p, .contexts_TP_python p{
+.contexts_TP p, .contexts_TP_python p, .informations p{
     padding: 1em;
     background-color: #f3f3f3;
     border-radius: 5px;

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font: 300 100%/1.5em 'Lato', sans-serif;
+    font: 300 100%/1.5em sans-serif;
 }
 
 
@@ -136,12 +136,11 @@ body {
 
 .informations p {
     margin: 10px;
-    margin-top: 2em;
+    margin-top: 3em;
     text-align: justify;
     width: 88%;
     padding: 1em;
     font-family: sans-serif;
-    font-size: 17px;
 }
 
 .visio {
@@ -204,6 +203,7 @@ body {
     padding: 1em;
     background-color: #f3f3f3;
     border-radius: 5px;
+    font-size: 17px;
 }
 .python_title{
     width: 20%;
@@ -291,6 +291,9 @@ h3{
     .container--responsive {
         width: 70%;
     }
+    .informations p {
+        margin-top: 7.5em;
+    }
 }
 @media all and (max-width: 967px) {
     .exo_container_python{
@@ -316,16 +319,11 @@ h3{
         height: 50em;
     }
     .informations p {
-        padding: 0.5em;
-        font-size: 10px;
         width: 85%;
     }
 
     .PowerShell_Height{
         font-size: 10px;
-    }
-    .informations {
-        background-position: right;
     }
     h5 {
         font-size: 14px;

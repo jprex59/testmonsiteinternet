@@ -59,13 +59,97 @@ body{
   margin-left: 2em;
 }
 
-.container_artical{
+
+
+
+/***********Articles********************/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eaeaea;
+  overflow: hidden;
+  height: 0;
+  max-height: 260px;
+  transition: 0.3s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay a{
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  transition: all .5s;
+  float: right;
+}
+
+.overlay a:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.artical{
+  width: 100%;
+}
+.artical h2{
+  color: black;
+  margin-left: 2em;
+}
+.container-artical {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 20px;
   flex-wrap: wrap;
 }
+.artical-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  position: relative;
+  width: 100%;
+}
+.artical-item p {
+  font-size: 15px;
+  color: black;
+}
+.artical-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  margin: 15px;
+}
+.artical-title{
+  background-color: #f3f3f3;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+}
+.artical-title h4 {
+  font-size: 20px;  
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+.artical-item:hover .overlay {
+  height: 100%;
+  padding: 20px;
+}
 
-.container_artical h2{
-  margin-left: 2em;
+
+.art1{ 
+  background: url('../images/techno/img1.jpg'); 
+  background-size: cover; 
+}
+
+.art2{
+  background-image: url('../images/techno/img2.png');
+  background-size: cover;
 }

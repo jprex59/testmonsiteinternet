@@ -159,7 +159,7 @@ icon.addEventListener('click', () => {
 
 
 /**********************************Ouverture au slide tentative************************************/
-/*
+
 body.addEventListener('touchstart', a => {
   touchStartt = a.targetTouches[0].clientX;
   console.log(touchStartt);
@@ -204,8 +204,7 @@ body.addEventListener('touchend', e => {
   }
 });
 
-*/
-/*************Responssive*************/
+
 
 
 

@@ -113,7 +113,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
-    width: 1500px;
+    width: 1200px;
 }
 
 .container--title {
@@ -195,6 +195,7 @@ body {
     background-image: url("../images/python.png");
     background-position: bottom 30% left 5%;
     background-size: 100px;
+    width: 100px;
     background-repeat: no-repeat;
     border-radius: 0;
     border: none;
@@ -227,11 +228,6 @@ h3{
 
 /************************responsive*****************************************************/
 
-@media all and (max-width: 1560px) {
-    .container--responsive {
-        width: 100%;
-    }
-}
 
 @media all and (max-width: 1540px) {
 

@@ -17,36 +17,53 @@
 </head>
 
 <body>
-    <div style="position: relative;">
-        <div class="menu">
-            <div class="information-bar">
-                    <p class="name">Jean Paris BTS SIO 2</p>
-                <div class="profile">
-                    <img src="images/jeanPro.jpg">
-                </div>
-            </div>
-        </div>
-        <span class="hamburger">
-        <span></span>
+    <div style="display: flex; justify-content: center; width: 100%;">
+        <nav class="menu">
+            <a href="#company" class="nav-item is-active">L'Entreprise</a>
+            <a href="#calendrier" class="nav-item">Calendrier</a>
+            <a href="#localisation" class="nav-item">Localisation</a>
+            <a href="#day" class="nav-item">Rapports Journaliers</a>
+            <span class="nav-item-hamburger hamburger" onmouseover="redhamburger()"  onmouseout="hamburger()">
+                <span></span>
+            <span></span>
+            <span></span>
+            </span>
+            <span class="nav-indicator"></span>
+        </nav>
+    </div>
+        
+    <div class="header"><h1>Stage de 2e année</h1></div>
+    
+        <span class="hamburger1">
+            <span></span>
         <span></span>
         <span></span>
         </span>
-
+    
         <span class="closehamburger2">
-        <span></span>
+            <span></span>
         <span></span>
         <span></span>
         </span>
-
+    
+        <span class="closehamburger_Responsive">
+            <span></span>
+        <span></span>
+        <span></span>
+        </span>
+    
+        
+       
+    
         <span class="closehamburger1">
-      x
-      </span>
-
+        x
+        </span>
+    
         <div class="sidebar">
             <div class="espace"></div>
             <a href="SIO.html">
                 <div class="onglet">
-                    <i class="fas fa-graduation-cap"></i> SIO
+                    <i class="fas fa-graduation-cap"></i>SIO
                 </div>
             </a>
             <a href="StageSio.html">
@@ -60,7 +77,7 @@
                 </div>
             </a>
             <a href="VeilleJuridique.html">
-                <div class="onglet">
+                <div class="onglet" style="margin-bottom: 50px;">
                     <i class="fas fa-book"></i> veille juridique
                 </div>
             </a>
@@ -82,15 +99,14 @@
             </a>
             <div class="espace"></div>
         </div>
+    
 
-        
 
-
-        <div class="container_company">
+        <div class="container_company" id="company">
             <a class="modal_a button_modal company" href="#demo"><h4><i class="fas fa-bookmark"></i> Pharmagest</h4></a>
             <a class="modal_a button_modal service " href="#demo1"><h4><i class="fas fa-bookmark"></i> L'agence régionale</h4></a>
             <a class="modal_a button_modal group " href="#demo2"><h4><i class="fas fa-bookmark"></i> Le groupe</h4></a>
-            <a class="modal_a button_modal skills " href="#demo3"><h4><i class="fas fa-bookmark"></i> Compétences acquise</h4></a>
+            <a class="modal_a button_modal skills " href="#demo3"><h4><i class="fas fa-bookmark"></i> Compétences acquises</h4></a>
         
             <div id="demo" class="modal">
               <div class="modal_content">
@@ -369,9 +385,9 @@
         <span class="dot" onclick="currentSlide(2)"></span>
     </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4508.532189824666!2d3.0265563166876404!3d50.37111398045537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2cb98a4aef575%3A0xf6fc2f238d382091!2sPharmagest%20Inter%40ctive!5e0!3m2!1sfr!2sfr!4v1614364594902!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe id="localisation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4508.532189824666!2d3.0265563166876404!3d50.37111398045537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2cb98a4aef575%3A0xf6fc2f238d382091!2sPharmagest%20Inter%40ctive!5e0!3m2!1sfr!2sfr!4v1614364594902!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-    <div class="history-tl-container">
+    <div class="history-tl-container" id="day">
         <ul class="tl">
             <li class="tl-item" ng-repeat="item in retailer_history">
                 <div class="timestamp" id="4">

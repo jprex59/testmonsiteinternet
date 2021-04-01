@@ -71,7 +71,6 @@ body{
   background-color: #eaeaea;
   overflow: hidden;
   height: 0;
-  max-height: 260px;
   transition: 0.3s all;
   display: flex;
   justify-content: center;
@@ -143,6 +142,27 @@ body{
   padding: 20px;
 }
 
+
+
+
+
+@media all and (max-width: 1078px) {
+  .source_column{
+    width: 700px;
+  }
+
+  .source_column p{
+    font-size: 23px;
+  }
+
+  .artical-item p {
+    font-size: 20px;
+  }
+
+  .artical-card{
+    width: 750px;
+  }
+}
 
 .art1{ 
   background: url('../images/techno/img1.jpg'); 

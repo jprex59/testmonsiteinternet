@@ -130,12 +130,12 @@ body {
     background-position: top right;
     background-size: 100px;
     background-color: #eaeaea;
-    display: flex;
-    align-items: center;
+    padding: 10px;
+    width: 98%;
 }
 
 .informations p {
-    margin: 10px;
+    margin: 15px;
     margin-top: 3em;
     text-align: justify;
     width: 88%;
@@ -205,6 +205,7 @@ body {
     background-color: #f3f3f3;
     border-radius: 5px;
     font-size: 17px;
+    margin: 0;
 }
 .python_title{
     width: 20%;
@@ -287,9 +288,6 @@ h3{
     .container--responsive {
         width: 70%;
     }
-    .informations p {
-        margin-top: 7.5em;
-    }
 }
 @media all and (max-width: 967px) {
     .exo_container_python{
@@ -313,9 +311,6 @@ h3{
         margin-top: 5%;
         background-size: contain;
         height: 50em;
-    }
-    .informations p {
-        width: 85%;
     }
 
     .PowerShell_Height{

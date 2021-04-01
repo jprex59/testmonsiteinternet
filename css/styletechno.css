@@ -37,6 +37,7 @@ body{
   background-color: #f3f3f3;
   border-radius: 7px;
   font-size: 20px;
+  text-align: justify;
 }
 
 .container_source{
@@ -49,6 +50,9 @@ body{
   width: 500px;
   text-align: justify;
   margin: 15px;
+}
+.source_column a:hover{
+  color: black;
 }
 
 .source_column p{
@@ -83,7 +87,9 @@ body{
   color: white;
   border-radius: 5px;
   transition: all .5s;
-  float: right;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .overlay a:hover{
@@ -117,6 +123,7 @@ body{
 .artical-item p {
   font-size: 15px;
   color: black;
+  text-align: justify;
 }
 .artical-card{
   display: flex;
@@ -171,5 +178,21 @@ body{
 
 .art2{
   background-image: url('../images/techno/img2.png');
+  background-size: cover;
+}
+.art3{
+  background-image: url('../images/techno/img3.jpg');
+  background-size: cover;
+}
+.art4{
+  background-image: url('../images/techno/img4.png');
+  background-size: cover;
+}
+.art8{
+  background-image: url('../images/techno/img8.png');
+  background-size: cover;
+}
+.art{
+  background-image: url('../images/article.PNG');
   background-size: cover;
 }

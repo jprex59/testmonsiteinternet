@@ -14,6 +14,30 @@ body {
 	justify-content: space-around;
 	position: relative;
 }
+.note {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	text-transform: uppercase;
+	animation: noteAnimation 10s infinite alternate;
+	font-weight: 900;
+}
+
+@keyframes noteAnimation {
+	25% {
+		color: #000000;
+	}
+	50% {
+		color: #103248;
+	}
+	75% {
+		color: #246e9f;
+	}
+	100% {
+		color: #3196d9;
+	}
+}
+
 .information {
 	width: 40%;
 	height: 100%;

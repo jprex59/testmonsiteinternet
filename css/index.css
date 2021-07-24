@@ -134,14 +134,18 @@ nav {
 		clip-path: circle(45% at 122% 100%);
 	}
 }
-
+.container-tiles {
+	display: flex;
+	flex-wrap: wrap;
+}
 .tile .title {
 	margin-bottom: 40px !important;
-
 	font-size: 25px;
 }
 .tile {
 	position: relative;
+	min-width: 250px;
+	margin: 10px;
 }
 .tile .fas {
 	font-size: 25px;
@@ -153,4 +157,13 @@ nav {
 
 #experience {
 	text-align: center;
+}
+
+.subtitle-langues {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.subtitle-langues ul {
+	width: 50%;
 }

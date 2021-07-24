@@ -1,10 +1,3 @@
-const toggle = document.querySelector(".toggle");
-
-toggle.addEventListener("click", () => {
-	const shareBtn = document.querySelector(".share");
-	shareBtn.classList.toggle("active");
-});
-
 document.addEventListener("DOMContentLoaded", () => {
 	// Get all "navbar-burger" elements
 	const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"), 0);
@@ -25,3 +18,28 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 });
+
+/**************Faire changer le nom du menu en fonction de la section********/
+
+// recuperer les elements
+let SectionName = document.getElementById("SectionName");
+let contact = document.getElementById("contact");
+let presentationContainer = document.querySelector(".presentation-container");
+
+/*****/
+let sectionNameTop = SectionName.offsetTop;
+let contactTop = contact.offsetTop;
+
+// faire la fonction
+/*****Plus tard mettre dans un tableau*****/
+function Section() {
+	console.log(window.pageYOffset);
+	if (window.pageYOffset < contactTop) {
+		SectionName.innerHTML = "Mon Portfolio";
+	} else if (window.pageYOffset > contactTop) {
+		SectionName.innerHTML = "Contact";
+	}
+}
+window.onscroll = function () {
+	Section();
+};

@@ -38,9 +38,11 @@ function Section() {
 	console.log(window.pageYOffset);
 	if (window.pageYOffset < informationsTop) {
 		SectionName.innerHTML = "Mon Portfolio";
-	} else if (window.pageYOffset > informationsTop) {
+	}
+	if (window.pageYOffset > informationsTop) {
 		SectionName.innerHTML = "A Propos";
-	} else if (window.pageYOffset > contactTop) {
+	}
+	if (window.pageYOffset > contactTop) {
 		SectionName.innerHTML = "Contact";
 	}
 }

@@ -82,14 +82,14 @@
 			<img class="imgHorizontale section" src="./img/sio/Visio infra bts 2e année.png" />
 			<img class="imgVerticale section" src="./img/sio/Visio infra bts 2e année verticale.png" />
 			<div class="buttons">
-				<button class="button">Sauvegarde</button>
-				<button class="button">IIS</button>
-				<button class="button">EON</button>
-				<button class="button">AD</button>
-				<button class="button">DNS</button>
-				<button class="button">DHCP</button>
-				<button class="button">NLB</button>
-				<button class="button">PSI</button>
+				<button class="button is-primary">Sauvegarde</button>
+				<button class="button is-primary">IIS</button>
+				<button class="button is-primary">EON</button>
+				<button class="button is-primary">AD</button>
+				<button class="button is-primary">DNS</button>
+				<button class="button is-primary">DHCP</button>
+				<button class="button is-primary">NLB</button>
+				<button class="button is-primary">PSI</button>
 			</div>
 			<article class="message is-dark box">
 				<div class="message-body">
@@ -201,7 +201,7 @@ def Alea_level(champion):
 
 #print(Alea_level(Cenna))
     </code>
-    <code class="python exo_Python">
+    <code class="python exo_Python" id="pythonLast">
 # Question 3 #
 
 def Equipe_niveau_alea() :
@@ -233,6 +233,149 @@ print(Equipe_niveau_alea2())
 			</div>
 		</div>
 
+		<div class="container_company" id="company">
+			<a onclick="openModal(1)" class="modal_a button_modal company" href="#demo"
+				><h4><i class="fas fa-bookmark"></i> Pharmagest</h4></a
+			>
+			<a onclick="openModal(2)" class="modal_a button_modal service" href="#demo1"
+				><h4><i class="fas fa-bookmark"></i> L'agence régionale</h4></a
+			>
+			<a onclick="openModal(3)" class="modal_a button_modal group" href="#demo2"
+				><h4><i class="fas fa-bookmark"></i> Le groupe</h4></a
+			>
+			<a onclick="openModal(4)" class="modal_a button_modal skills" href="#demo3"
+				><h4><i class="fas fa-bookmark"></i> Projets et compétences</h4></a
+			>
+
+			<div class="modal">
+				<div class="modal-background"></div>
+				<div class="modal-card">
+					<header class="modal-card-head">
+						<p class="modal-card-title">Modal title</p>
+						<button class="delete" aria-label="close"></button>
+					</header>
+					<section class="modal-card-body">
+						<!-- Content ... -->
+					</section>
+					<footer class="modal-card-foot">
+						<button class="button is-success">Save changes</button>
+						<button class="button">Cancel</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="Modal_1">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> L'entreprise</p>
+					<button class="delete" aria-label="close" onclick="closeModal(1)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						Stage de 2e année du BTS SIO (2020) Durée : 7 semaines du 4 Janvier au 19 Février 2021<br /><br />
+
+						Pharmagest est une entreprise du <b>domaine informatique spécialisée dans les pharmacies/ les officines</b> ...
+						Pharmagest est divisée en 20 sites dans la France avec les Antilles.<br /><br />
+
+						J'effectue mon stage à l'agence Pharmagest de <b>Cuincy qui est en charge de la région Hauts de France</b> Localisation
+						: Zac de la Haute Rive, 59553 Cuincy<br /><br />
+
+						Quelques chiffres :<br />
+						CA de Janvier à Septembre de 2020 : 127.7M<br />
+						CA annuel 2019 : 158.55M<br />
+						Groupe : La cooperative Welcoop<br />
+					</p>
+					<a class="button is-primary" href="https://pharmagest.com/qui-sommes-nous/groupe-pharmagest/">Voir le site</a>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+
+		<div class="modal" id="Modal_2">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> Les services</p>
+					<button class="delete" aria-label="close" onclick="closeModal(2)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						Elle dispose de plusieurs services :<br /><br />
+
+						<b>L'atelier</b> divisé en 2 parties :<br />
+						<b>SAV</b> et <b>Préparation de serveurs neufs</b><br /><br />
+
+						<b>Les techniciens itinérants</b> :<br />
+						qui sont en charge des installations du matériel neuf et de la maintenance des produits installés.<br /><br />
+
+						<b>Le Service d'Assistance Technique Régional, A.T.R. :</b><br />
+						qui se charge du <b>Helpdesk</b> qui centralise les appels des pharmacies et qui agit avec la prise à distance ou s'il
+						est dans l'incapacité de répondre au problème doit se rapprocher de l'ESEC (Répond à la norme ISO), European Service
+						Expert Center, ou déclencher une intervention sur site auprès des techniciens itinérants.
+					</p>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+
+		<div class="modal" id="Modal_3">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> Le groupe</p>
+					<button class="delete" aria-label="close" onclick="closeModal(3)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						"Le Groupe Pharmagest est le leader français de l’informatique de santé avec plus de 44% de parts de marché en
+						informatique de pharmacie officinale, 28% des EHPAD, 43% des HAD, 20% des maisons de santé. Avec plus de 1.000
+						collaborateurs, la stratégie du Groupe Pharmagest s’articule autour d’un cœur de métier : l’innovation informatique au
+						service de la Santé et le développement de 2 axes prioritaires : 1/ les services et technologies à destination des
+						professionnels de santé ; 2/ les domaines technologiques capables d’améliorer l’efficience des systèmes de santé"<br /><br />
+
+						Source : Communiqué de presse de Pharmagest, CA 2019<br />
+					</p>
+					<a class="button is-primary" href="https://www.lacooperativewelcoop.com/">Voir la source</a>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+
+		<div class="modal" id="Modal_4">
+			<div class="modal-background"></div>
+			<div class="modal-card responsive-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title"><i class="far fa-bookmark"></i> Projets et compétences</p>
+					<button class="delete" aria-label="close" onclick="closeModal(4)"></button>
+				</header>
+				<section class="modal-card-body">
+					<p>
+						<i class="fas fa-tools"></i> S.A.V Réparation du matériel informatique : ordinateurs, imprimantes, scanners,
+						routeurs...<br /><br />
+						<i class="fas fa-headset"></i> Hotline<br /><br />
+						<i class="fas fa-server"></i> Préparation et transfert de serveurs<br /><br />
+						<i class="fas fa-laptop-medical"></i> Installation et dépannage de matériel informatique avec un technicien itinérant<br /><br /><br />
+						<i class="fab fa-linux"></i> Découverte de Linux (Centos)<br /><br />
+						<i class="fas fa-network-wired"></i> Base d'un réseau LAN
+					</p>
+				</section>
+				<footer class="modal-card-foot"></footer>
+			</div>
+		</div>
+
+		<iframe
+			class="section"
+			id="localisation"
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4508.532189824666!2d3.0265563166876404!3d50.37111398045537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2cb98a4aef575%3A0xf6fc2f238d382091!2sPharmagest%20Inter%40ctive!5e0!3m2!1sfr!2sfr!4v1614364594902!5m2!1sfr!2sfr"
+			width="100%"
+			height="450"
+			style="border: 0"
+			allowfullscreen=""
+			loading="lazy"
+		></iframe>
+
 		<div class="footer-own">
 			<p>&copy; 25 / 07 / 2021</p>
 		</div>
@@ -240,6 +383,7 @@ print(Equipe_niveau_alea2())
 		<script>
 			hljs.initHighlightingOnLoad();
 		</script>
-		<script type="text/javascript" src="./js/menu.js"></script>
+		<script type="text/javascript" src="./js/all.js"></script>
+		<script type="text/javascript" src="./js/sio.js"></script>
 	</body>
 </html>

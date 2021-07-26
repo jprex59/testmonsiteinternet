@@ -85,3 +85,130 @@ pre {
 		justify-content: space-between;
 	}
 }
+
+/***********Stages****************/
+
+/*-------------Modal---------------*/
+.container_company {
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-family: sans-serif;
+	flex-wrap: wrap;
+}
+
+.modal_content p {
+	text-align: justify;
+}
+.container_company a h4 {
+	font-size: 17px;
+	background-color: #f3f3f3;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.button_modal {
+	width: 500px;
+	height: 310px;
+	margin-top: 50px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.company {
+	background-image: url("../img/sio/pharmagestbio.PNG");
+	background-position: center;
+	background-size: 210px;
+	background-repeat: no-repeat;
+}
+
+.group {
+	background-image: url("../img/sio/groupe.png");
+	background-position: center;
+	background-size: 190px;
+	background-repeat: no-repeat;
+}
+
+.service {
+	background-image: url("../img/sio/service.png");
+	background-position: center;
+	background-size: 230px;
+	background-repeat: no-repeat;
+}
+
+.skills {
+	background-image: url("../img/sio/workexperience.png");
+	background-position: center;
+	background-size: 230px;
+	background-repeat: no-repeat;
+}
+
+.modal_a {
+	text-decoration: none;
+	padding: 15px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	color: black;
+	transition: all 0.5s;
+	background-color: #ececec;
+}
+
+.modal_a:hover {
+	background-size: 280px;
+	background-color: #c0c0c0;
+}
+
+.modal_content {
+	border-radius: 4px;
+	position: relative;
+	width: 700px;
+	font-size: 20px;
+	max-width: 90%;
+	background: white;
+	padding: 1.5em 2em;
+	margin: 25px;
+}
+
+.modal_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: grey;
+	text-decoration: none;
+}
+
+@media all and (max-width: 2300px) {
+	.button_modal {
+		width: 335px;
+	}
+}
+
+@media all and (max-width: 1500px) {
+	.button_modal {
+		width: 310px;
+	}
+}
+
+@media all and (max-width: 1380px) {
+	.button_modal {
+		width: 500px;
+	}
+}
+@media all and (max-width: 1100px) {
+	.button_modal {
+		width: 450px;
+	}
+}
+@media all and (max-width: 1000px) {
+	.button_modal {
+		width: 310px;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.modal_content {
+		width: 95%;
+	}
+}

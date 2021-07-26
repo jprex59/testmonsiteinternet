@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+		<link rel="stylesheet" href="./css/sio.css" />
+		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css" type="text/css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
+
+		<title>SIO</title>
+	</head>
+	<body>
+		<div class="espaceNav"></div>
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<!---faire changer le nom en fonction du titre de la ssection-->
+				<a class="navbar-item title is-4" id="SectionName" href="index.html">BTS SIO </a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start"></div>
+
+				<div class="navbar-end">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> BTS SIO </a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item"> Projets </a>
+							<a class="navbar-item"> Stage </a>
+							<hr class="navbar-divider" />
+							<a class="navbar-item"> Veilles technologique et juridique </a>
+						</div>
+					</div>
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link"> Licence IG </a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item"> Alternance </a>
+							<hr class="navbar-divider" />
+						</div>
+					</div>
+
+					<a class="navbar-item"> Programmation</a>
+
+					<div class="navbar-item">
+						<div class="buttons">
+							<a href="#contact" class="button is-info">
+								<strong>Contact</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container container-img section is-medium">
+			<article class="message is-dark box">
+				<div class="message-body">
+					<p class="title is-4">Projets réseau</p>
+					Durant cette année de BTS j’apprends les différents types d’architectures des <b>réseaux informatiques</b> et notamment
+					comment les <b>installer, les administrer, les protéger et gérer la maintenance</b> des équipements.
+					<br />
+					Le but de monter cette architecture est de découvrir les différents services mais aussi de voir les principes de sécurité
+					qui en découlent comme : La QOS (Quality Of Services, La tolérance de panne, Le PSI (Plan De Sécurité Informatique), La
+					haute disponibilité.
+					<br />
+					Durant la 1ère année j’ai également appris lors des cours de programmation à <b>coder un site internet simple</b> avec la
+					mise en place d’un CRUD connecté à une base de données mais aussi le langage C et Python.
+					<br />
+				</div>
+			</article>
+			<img class="imgHorizontale section" src="./img/sio/Visio infra bts 2e année.png" />
+			<img class="imgVerticale section" src="./img/sio/Visio infra bts 2e année verticale.png" />
+			<div class="buttons">
+				<button class="button">Sauvegarde</button>
+				<button class="button">IIS</button>
+				<button class="button">EON</button>
+				<button class="button">AD</button>
+				<button class="button">DNS</button>
+				<button class="button">DHCP</button>
+				<button class="button">NLB</button>
+				<button class="button">PSI</button>
+			</div>
+			<article class="message is-dark box">
+				<div class="message-body">
+					<p class="title is-4">Powershell</p>
+					<b>Context : </b><br />La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux
+					différentes ligues sportives régionales et à d’autres structures hébergées. Dernièrement <b>le serveur LDAP</b> de la maison
+					des ligues <b>est tombé en panne</b>. L’administrateur réseau n’ayant pas mis en place de protocole de gestion de panne, et
+					ne disposant pas de sauvegarde pour ce serveur, vous demande de redéployer le serveur AD et de le configurer. Vous devrez
+					aussi à partir des fichiers fournis <b>recréer automatiquement les comptes utilisateurs et les groupes correspondant</b>.
+				</div>
+			</article>
+
+			<pre>
+        <code class="PowerShell PowerShell_Height">
+    # Script pour enregistrer des utilisateurs dans AD
+    # version 1.0
+    # Auteur : JEAN PARIS
+            
+            
+    #Activation du module AD
+    Import-Module ActiveDirectory
+            
+            
+    #Force le type d'execution
+    Set-ExecutionPolicy Unrestricted
+            
+    #mettre comme quoi le module AD est chargé
+            
+    Write-Host "Module ActiveDirectory chargé !"
+            
+    #ici on récupère le fichier avec les utilisateurs a ajouter dans l'AD
+            
+    $file=Read-Host -Prompt "Saisir le nom du fichier à importer"
+    $users=Import-CSV $file
+            
+    #on récupère chaque information dans le fichier ligne par ligne pour creer un utilisateur grâce aux fonctions et on passe une ligne pour recommencer
+            
+    Import-CSV -Delimiter ";" -Path .\users.csv | ForEach-Object {
+        $name = $_.Prenom  
+        $surname = $_.Nom
+        $department = $_.Ligue
+        $displayname = "$name $surname"
+               
+            New-ADUser -Name $displayname -GivenName $name -Surname $surname -DisplayName $displayname -department $department -AccountPassword (ConvertTo-SecureString "P@ssw0rd" -AsPlainText -force) -Enabled $true
+            Write-Host "Création de $displayname : Prénom=$name Nom=$surname Ligue=$ligue Fichier source=$file"
+    }
+        </code>
+    </pre>
+
+			<article class="message is-dark box">
+				<div class="message-body">
+					<p class="title is-4">Python</p>
+					<b>Context : </b><br />le but de l'exercice est d'utiliser des fonctions/ procédures pour mettre en place un système de
+					niveau. Voici à quoi servent les différentes fonctions :<br />
+					<br />
+					<b>Level_up</b> augmente d'un niveau le champion choisi. / <b>Level_n</b> augmente de N niveau le champion choisi. /
+					<b>Alea_Level</b> augmente d'un niveau aléatoire le champion choisi. / <b>Réinitialiser</b> réinitialise le niveau du
+					champion choisi. / <b>Equipe_niveau_alea</b> augmente d'un niveau aléatoire l'équipe des champions. /
+					<b>Equipe_niveau_alea2</b> même objectif mais d'une autre façon
+				</div>
+			</article>
+			<div class="container">
+				<pre class="exo_container_python">
+        <code class="python exo_Python">
+            #2 eme partie
+            #Enoncé
+
+Zohé = ["mage",1,60,28,180]
+Malf = ["tank",1,55,30,210]
+Lucia = ["tireur",1,65,28,160]
+Maho = ["tank",1,50,35,230]
+Cenna=["tireur",1,70,25,130]
+
+Level=["",1,5,2,1.1]
+Equipe = [Cenna,Zohé,Malf,Lucia,Maho]
+        </code>
+        <code class="python exo_Python">
+# Question 1 en prenant
+# pour éxemple Cenna 
+
+def Réinitialiser(champion):
+     champion=["tireur",1,70,25,130]
+     Cenna=champion
+     return(champion)
+
+#print(Réinitialiser(Cenna))
+    </code>
+    <code class="python exo_Python">
+# Question 2 #
+
+def Level_up(champion):
+    for i in range(0,4):
+      champion[i]=champion[i]+Level[i]
+    champion[4]=champion[4]*Level[4]
+    return (champion)
+
+def Level_n(champion,n):
+    for i in range (1,n):
+        champion=Level_up(champion)
+    return (champion)
+
+def Alea_level(champion):
+     import random
+     r = random.randint(0, 20)
+     Level_n(champion,r)
+     for i in range (1,r):
+        champion=Level_up(champion)
+     return (champion)
+
+#print(Alea_level(Cenna))
+    </code>
+    <code class="python exo_Python">
+# Question 3 #
+
+def Equipe_niveau_alea() :
+     print(Alea_level(Cenna))
+
+     print(Alea_level(Zohé))
+
+     print(Alea_level(Malf))
+
+     print(Alea_level(Lucia))
+
+     print(Alea_level(Maho))
+
+     return()
+
+#print(Equipe_niveau_alea())
+
+# ou ...
+
+def Equipe_niveau_alea2() :
+     for i in range (0,4) :
+         champion=Equipe[i]
+         print(Alea_level(champion))
+     return()
+
+print(Equipe_niveau_alea2())
+        </code>
+    </pre>
+			</div>
+		</div>
+
+		<div class="footer-own">
+			<p>&copy; 25 / 07 / 2021</p>
+		</div>
+
+		<script>
+			hljs.initHighlightingOnLoad();
+		</script>
+		<script type="text/javascript" src="./js/menu.js"></script>
+	</body>
+</html>

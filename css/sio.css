@@ -152,12 +152,13 @@ pre {
 	text-transform: uppercase;
 	color: black;
 	transition: all 0.5s;
-	background-color: #ececec;
+	background-color: #3298dc9c;
+	box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
 }
 
 .modal_a:hover {
 	background-size: 280px;
-	background-color: #c0c0c0;
+	background-color: #3298dc;
 }
 
 .modal_content {

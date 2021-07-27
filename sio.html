@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
 		<link rel="stylesheet" href="./css/sio.css" />
 		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="stylesheet" href="./css/bulma-tooltip.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 		<script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
@@ -80,15 +81,68 @@
 			</article>
 			<img class="imgHorizontale section" src="./img/sio/Visio infra bts 2e année.png" />
 			<img class="imgVerticale section" src="./img/sio/Visio infra bts 2e année verticale.png" />
-			<div class="buttons">
-				<button class="button is-primary">Sauvegarde</button>
-				<button class="button is-primary">IIS</button>
-				<button class="button is-primary">EON</button>
-				<button class="button is-primary">AD</button>
-				<button class="button is-primary">DNS</button>
-				<button class="button is-primary">DHCP</button>
-				<button class="button is-primary">NLB</button>
-				<button class="button is-primary">PSI</button>
+
+			<div class="container container_card">
+				<a
+					href="./DOC/7- AD.pdf"
+					class="card_own card_patron has-tooltip-arrow has-tooltip-primary has-tooltip-active"
+					data-tooltip="cliquez pour voir la doc"
+				>
+					<img class="image_own" src="./img/sio/ad.jpg" />
+					<div class="titleAbsolute"><p class="block title is-6">AD</p></div>
+					<p class="block subtitle is-6">Regarder la doc <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a href="./DOC/1- Architecture n tiers.pdf" class="card_own card_patron card-responsive">
+					<img class="image_own" src="./img/sio/arch3tiers.PNG" />
+					<div class="titleAbsolute"><p class="block title is-6">Architecture 3 tiers</p></div>
+					<p class="block subtitle is-6">Regarder la doc <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a href="./DOC/5- Cobian.pdf" class="card_own card_patron">
+					<img class="image_own" src="./img/sio/cobian.JPG" />
+					<div class="titleAbsolute"><p class="block title is-6">Cobian Backup</p></div>
+					<p class="block subtitle is-6">Regarder la doc <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a href="./DOC/8- DHCP.pdf" class="card_own">
+					<img class="image_own" src="./img/sio/dhcp.png" />
+					<div class="titleAbsolute"><p class="block title is-6">DHCP</p></div>
+					<p class="block subtitle is-6">Regarder la doc <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<div class="divider is-right"></div>
+				<a href="./DOC/6- DNS.pdf" class="card_own card_patron">
+					<img class="image_own" src="./img/sio/dns.jpg" />
+					<div class="titleAbsolute"><p class="block title is-6">DNS</p></div>
+					<p class="block subtitle is-6">Regarder la doc <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a href="./DOC/2- Supervision EON.pdf" class="card_own card_patron card-responsive">
+					<img class="image_own" src="./img/sio/eon.jpg" />
+					<div class="titleAbsolute"><p class="block title is-6">EON</p></div>
+					<p class="block subtitle is-6">Regarder la doc <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a href="./DOC/4- NLB.pdf" class="card_own card_patron">
+					<img class="image_own" src="./img/sio/nlb.png" />
+					<div class="titleAbsolute"><p class="block title is-6">NLB</p></div>
+					<p class="block subtitle is-6">Regarder la doc <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+				<a class="card_own card_last_column">
+					<img class="image_own" src="./img/sio/psi.jpg" />
+					<div class="titleAbsolute"><p class="block title is-6">PSI</p></div>
+					<p class="block subtitle is-6">Regarder la doc <i class="fas fa-long-arrow-alt-right"></i></p>
+				</a>
+
+				<!-------------------Pour rajouter des sites, changer le "SRC" pour mettre les logos et le "nom de la marque"
+				associé, enlever aussi les commentaires "/*" et "*/" au niveau de la classe ".container_card" ----->
+				<!---
+				<div class="card_own card_last_column">
+					<img class="image_own" src="./img/logo/interrogation.png" />
+					<div class="titleAbsolute"><p class="block title is-6">Nom de la marque</p></div>
+					<p class="block subtitle is-6">Select this site <i class="fas fa-long-arrow-alt-right"></i></p>
+				</div>
+				<div class="divider is-right"></div>
+				<div class="card_own card_last_column">
+					<img class="image_own" src="./img/logo/interrogation.png" />
+					<div class="titleAbsolute"><p class="block title is-6">Nom de la marque</p></div>
+					<p class="block subtitle is-6">Select this site <i class="fas fa-long-arrow-alt-right"></i></p>
+				</div>----->
 			</div>
 			<article class="message is-dark box">
 				<div class="message-body">
@@ -233,7 +287,11 @@ print(Equipe_niveau_alea2())
 		</div>
 
 		<div class="container_company" id="company">
-			<a onclick="openModal(1)" class="modal_a button_modal company" href="#demo"
+			<a
+				onclick="openModal(1)"
+				class="modal_a button_modal company has-tooltip-arrow has-tooltip-primary has-tooltip-active"
+				data-tooltip="Cliquez pour accéder aux informations !"
+				href="#demo"
 				><h4><i class="fas fa-bookmark"></i> Pharmagest</h4></a
 			>
 			<a onclick="openModal(2)" class="modal_a button_modal service" href="#demo1"

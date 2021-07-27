@@ -1,3 +1,6 @@
+.has-tooltip-arrow {
+	z-index: 0 !important;
+}
 .espaceNav {
 	width: 100%;
 	height: 76px;
@@ -211,5 +214,120 @@ pre {
 @media all and (max-width: 800px) {
 	.modal_content {
 		width: 95%;
+	}
+}
+
+/*******card docs**********/
+
+/********Site***************/
+.divider {
+	width: 95%;
+	margin: 0px !important;
+	height: 0;
+}
+
+.container_card {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 3rem 0rem !important;
+	/*
+	overflow-y: scroll;*/
+}
+.card_own {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	transition: all 0.5s;
+	min-height: 100px;
+	width: 190px;
+	height: 190px;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 0 0 3px 0;
+	border-bottom: 5px solid #e7edf400;
+}
+
+.card_patron {
+	border-right: 1px solid #e7edf4;
+}
+
+.card_own:hover {
+	border-bottom: 5px solid /*#19d6ba*/ #3273dc;
+	box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+	background-color: #ffffff;
+}
+.card_own img {
+	max-width: 100px;
+	max-height: 70px;
+}
+.card_own .title {
+	font-weight: 500;
+	color: #5e5d5d;
+	background-color: rgba(255, 255, 255, 0);
+	text-align: center;
+}
+
+.titleAbsolute {
+	position: absolute;
+	left: 0px;
+	bottom: 35px;
+	width: 100%;
+}
+
+.card_own .subtitle {
+	font-weight: 500;
+	color: /*#19d6ba*/ #3273dc;
+	background-color: rgba(255, 255, 255, 0);
+	opacity: 0;
+	transition: all 0.5s;
+	position: absolute;
+	left: 30px;
+	bottom: 10px;
+}
+.card_own .subtitle:hover {
+	opacity: 1;
+}
+
+@media all and (max-width: 875px) {
+	.card_own {
+		width: 160px;
+	}
+	.card_own .subtitle {
+		left: 20px;
+	}
+}
+@media all and (max-width: 750px) {
+	.card_own {
+		width: 143px;
+	}
+	.card_own .subtitle {
+		left: 10px;
+	}
+}
+@media all and (max-width: 640px) {
+	.card_own {
+		width: 200px;
+	}
+	.card_own .subtitle {
+		left: 30px;
+	}
+	.card-responsive {
+		border-right: 0px solid #e7edf4 !important;
+	}
+}
+@media all and (max-width: 470px) {
+	.card_own {
+		width: 145px;
+	}
+	.card_own .subtitle {
+		display: none;
+	}
+}
+@media all and (max-width: 355px) {
+	.card_own {
+		width: 125px;
 	}
 }

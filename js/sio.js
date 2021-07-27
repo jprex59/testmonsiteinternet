@@ -29,3 +29,15 @@ function Section() {
 window.onscroll = function () {
 	Section();
 };
+
+var card = document.querySelectorAll(".card_own");
+var subtitle = document.querySelectorAll(".subtitle");
+
+for (let i = 0; i < card.length; i++) {
+	card[i].addEventListener("mouseover", () => {
+		subtitle[i].style.opacity = "1";
+	});
+	card[i].addEventListener("mouseout", () => {
+		subtitle[i].style.opacity = "0";
+	});
+}

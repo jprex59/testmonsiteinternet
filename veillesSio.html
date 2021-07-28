@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html class="has-navbar-fixed-top" lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,8 +18,7 @@
 		<title>Mes Veilles</title>
 	</head>
 	<body>
-		<div class="espaceNav"></div>
-		<nav class="navbar" role="navigation" aria-label="main navigation">
+		<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
 				<!---faire changer le nom en fonction du titre de la ssection-->
 				<a class="navbar-item title is-4" id="SectionName" href="index.html">Mes veilles</a>
@@ -72,10 +71,80 @@
 					à une surveillance active de l’environnement technologique, commercial, etc., pour en anticiper les évolutions »
 					<a href="https://fr.wikipedia.org/wiki/Veille_informationnelle">(Wikipedia)</a><br /><br />
 					Dans le cadre de mon BTS j'ai du tenir une veille informatique sur les <strong>SMART CITIES</strong> (les villes
-					intélligentes) et juridique sur <strong>CONTRATS DE PRODUCTION ET DE FOURNITURE DE SERVICE INFORMATIQUE</strong>.
+					intélligentes) et juridique sur les <strong>CONTRATS DE PRODUCTION ET DE FOURNITURE DE SERVICE INFORMATIQUE</strong>.
 				</div>
 			</article>
 		</div>
+		<div class="tabs is-centered is-boxed is-medium">
+			<ul>
+				<li class="is-active" id="informatique">
+					<a>
+						<span class="icon is-small"><i class="fas fa-server" aria-hidden="true"></i></span>
+						<span>Informatique</span>
+					</a>
+				</li>
+				<li id="juridique">
+					<a>
+						<span class="icon is-small"><i class="fas fa-gavel" aria-hidden="true"></i></span>
+						<span>Juridique</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="container section containerInformatique">
+			<article class="message">
+				<div class="message-header">
+					<p>LES SMART CITIES</p>
+				</div>
+				<div class="message-body">
+					"<b>Une ville intelligente</b> est une municipalité qui
+					<b>utilise les technologies de l’information et de la communication (TIC)</b> pour
+					<b>accroître son efficacité</b> opérationnelle, partager des informations avec le public et
+					<b>améliorer à la fois la qualité des services gouvernementaux et le bien-être des citoyens</b>.<br />
+					<br />
+
+					Bien que la définition exacte varie en fonction de la personne à qui vous parlez, la mission principale d’une ville
+					intelligente est d’<b>optimiser</b> les fonctions de la ville et de <b>stimuler</b> la croissance économique tout
+					<b>en améliorant la qualité de vie</b> de ses citoyens grâce à une <b>technologie intelligente</b> et à l’analyse des
+					données. La valeur d’une ville intelligente est déterminée par ce qu’elle choisit de faire avec la technologie, et non pas
+					seulement par la puissance de la technologie dont elle dispose." <br />
+					<br />
+					Extrait de <b>"La ville intelligente (smart city)" AI actualité informatique</b>
+				</div>
+			</article>
+
+			<div class="tile is-ancestor">
+				<div class="tile is-parent container">
+					<img class="image" src="./img/sio/veilles/techno/img1.jpg" />
+				</div>
+				<div class="tile is-parent is-8">
+					<article class="tile is-child box">
+						<p class="title">LES INTELLIGENCES DE LA SMART CITY</p>
+						<div class="content">
+							<p>
+								En s’imposant au cœur des villes intelligentes, les données ouvrent la voie à de nouveaux services améliorant
+								l’écosystème urbain. Enjeu de pouvoir, elles représentent un marché d’avenir qui attise les convoitises.
+								Collectivités, délégataires de service public et géants du numérique sont sur les rangs, tandis que l’open data
+								fait valoir sa transparence. Emmanuel Schneider specialist des smarts cities chez cisco :<br />
+								« Aujourd’hui, les échanges sont plus aisés, car tout le monde comprend la valeur de la donnée. Nous sommes
+								arrivés à un point de bascule où la numérisation des services devient une évidence »<br />
+
+								28/12/2019 par Alexandre Coutoacouto<br />
+								<a href="https://www.industrie-techno.com/article/smart-city-quand-les-donnees-irriguent-la-ville.58141"
+									>Voir l'article</a
+								>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+		<div class="container section containerJuridique">
+			<article class="message">
+				<div class="message-body">LES CONTRATS DE PRODUCTION ET DE FOURNITURE DE SERVICE INFORMATIQUE</div>
+			</article>
+		</div>
+
 		<div class="footer-own">
 			<p>&copy; 25 / 07 / 2021</p>
 		</div>
@@ -84,5 +153,6 @@
 			hljs.initHighlightingOnLoad();
 		</script>
 		<script type="text/javascript" src="./js/all.js"></script>
+		<script type="text/javascript" src="./js/veillesSio.js"></script>
 	</body>
 </html>

@@ -15,8 +15,11 @@ body {
 .fa-github {
 	color: black !important;
 	font-size: 25px !important;
-	display: none !important;
+}
+
+.github {
 	/***Verifier avant d'ajouter ***/
+	display: none !important;
 }
 .footer-own {
 	position: relative;

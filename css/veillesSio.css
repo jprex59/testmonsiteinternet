@@ -27,3 +27,16 @@
 		height: auto;
 	}
 }
+
+.content p a {
+	margin-top: 10px;
+}
+
+.up {
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	color: #000000;
+	z-index: 99999;
+	font-size: 40px;
+}

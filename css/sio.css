@@ -104,8 +104,8 @@ pre {
 }
 
 .button_modal {
-	width: 500px;
-	height: 310px;
+	width: 400px;
+	height: 300px;
 	margin-top: 50px;
 	display: flex;
 	align-items: flex-end;
@@ -144,8 +144,6 @@ pre {
 	text-decoration: none;
 	padding: 15px;
 	border-radius: 5px;
-	text-transform: uppercase;
-	color: black;
 	transition: all 0.5s;
 	background-color: #3298dc9c;
 	box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
@@ -154,6 +152,10 @@ pre {
 .modal_a:hover {
 	background-size: 280px;
 	background-color: #3298dc;
+}
+.modal_a h4 {
+	text-transform: uppercase;
+	color: black;
 }
 
 .modal_content {
@@ -230,7 +232,7 @@ pre {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	transition: all 0.5s;
 	min-height: 100px;
 	width: 190px;
@@ -252,8 +254,9 @@ pre {
 	background-color: #ffffff;
 }
 .card_own img {
-	max-width: 100px;
-	max-height: 70px;
+	max-width: 150px;
+	max-height: 90px;
+	margin-top: 25px;
 }
 .card_own .title {
 	font-weight: 500;
@@ -276,7 +279,7 @@ pre {
 	opacity: 0;
 	transition: all 0.5s;
 	position: absolute;
-	left: 30px;
+	left: 7px;
 	bottom: 10px;
 }
 .card_own .subtitle:hover {
@@ -288,7 +291,7 @@ pre {
 		width: 160px;
 	}
 	.card_own .subtitle {
-		left: 20px;
+		display: none;
 	}
 }
 @media all and (max-width: 750px) {
@@ -297,6 +300,9 @@ pre {
 	}
 	.card_own .subtitle {
 		left: 10px;
+	}
+	.card_own img {
+		max-height: 80px;
 	}
 }
 @media all and (max-width: 640px) {
@@ -309,6 +315,9 @@ pre {
 	.card-responsive {
 		border-right: 0px solid #e7edf4 !important;
 	}
+	.card_own img {
+		max-height: 100px;
+	}
 }
 @media all and (max-width: 470px) {
 	.card_own {
@@ -317,9 +326,22 @@ pre {
 	.card_own .subtitle {
 		display: none;
 	}
+	.card_own img {
+		max-height: 85px;
+	}
 }
 @media all and (max-width: 355px) {
 	.card_own {
 		width: 125px;
 	}
+	.card_own img {
+		max-height: 70px;
+	}
+}
+
+.titleStage {
+	margin-left: 20px;
+	width: 230px;
+	background-color: #19d6ba;
+	color: #fff;
 }

@@ -149,12 +149,33 @@ strong {
 	text-align: center;
 }
 
-.subtitle-langues {
+.content-ul {
 	display: flex;
 	flex-wrap: nowrap;
 }
 
-.subtitle-langues ul {
+.content-ul ul {
 	width: 50%;
 	text-align: center;
+}
+.contentIcon {
+	width: 16% !important;
+	text-align: center !important;
+}
+.contentInfo {
+	width: 84% !important;
+}
+.contentMore ul {
+	text-align: left;
+}
+
+#experience {
+	position: absolute;
+	top: 60%;
+	left: 35%;
+}
+@media all and (max-width: 770px) {
+	#experience {
+		position: initial;
+	}
 }

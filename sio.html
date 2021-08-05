@@ -15,11 +15,12 @@
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css" type="text/css" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
-
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<title>SIO</title>
 	</head>
 	<body>
-		<div class="pageloader"><span class="title">Pageloader</span></div>
+		<div class="pageloader"><span class="title">Chargement....</span></div>
 
 		<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
@@ -67,7 +68,7 @@
 			</div>
 		</nav>
 		<div class="container container-img section is-medium">
-			<article class="message is-dark box">
+			<article class="message is-dark box" data-aos="zoom-in">
 				<div class="message-body">
 					<p class="title is-4">Projets réseau</p>
 					Durant cette année de BTS j’apprends les différents types d’architectures des <b>réseaux informatiques</b> et notamment comment les
@@ -84,7 +85,7 @@
 			<img class="imgHorizontale section" src="./img/sio/Visio infra bts 2e année.png" />
 			<img class="imgVerticale section" src="./img/sio/Visio infra bts 2e année verticale.png" />
 
-			<div class="container container_card">
+			<div class="container container_card" data-aos="fade-right">
 				<a
 					href="./DOC/7- AD.pdf"
 					class="card_own card_patron has-tooltip-arrow has-tooltip-primary has-tooltip-active"
@@ -146,7 +147,7 @@
 					<p class="block subtitle is-6">Select this site <i class="fas fa-long-arrow-alt-right"></i></p>
 				</div>----->
 			</div>
-			<article class="message is-dark box">
+			<article class="message is-dark box" data-aos="fade-left">
 				<div class="message-body">
 					<p class="title is-4">Powershell</p>
 					<b>Context : </b><br />La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues
@@ -158,7 +159,7 @@
 			</article>
 
 			<pre>
-        <code class="PowerShell PowerShell_Height">
+        <code class="PowerShell PowerShell_Height"data-aos="fade-right">
     # Script pour enregistrer des utilisateurs dans AD
     # version 1.0
     # Auteur : JEAN PARIS
@@ -194,7 +195,7 @@
         </code>
     </pre>
 
-			<article class="message is-dark box">
+			<article class="message is-dark box" data-aos="fade-left">
 				<div class="message-body">
 					<p class="title is-4">Python</p>
 					<b>Context : </b><br />le but de l'exercice est d'utiliser des fonctions/ procédures pour mettre en place un système de niveau. Voici à quoi
@@ -208,7 +209,7 @@
 			</article>
 			<div class="container">
 				<pre class="exo_container_python">
-        <code class="python exo_Python">
+        <code class="python exo_Python" data-aos="fade-right">
             #2 eme partie
             #Enoncé
 
@@ -221,7 +222,7 @@ Cenna=["tireur",1,70,25,130]
 Level=["",1,5,2,1.1]
 Equipe = [Cenna,Zohé,Malf,Lucia,Maho]
         </code>
-        <code class="python exo_Python">
+        <code class="python exo_Python" data-aos="fade-left">
 # Question 1 en prenant
 # pour éxemple Cenna 
 
@@ -232,7 +233,7 @@ def Réinitialiser(champion):
 
 #print(Réinitialiser(Cenna))
     </code>
-    <code class="python exo_Python">
+    <code class="python exo_Python" data-aos="fade-right">
 # Question 2 #
 
 def Level_up(champion):
@@ -256,7 +257,7 @@ def Alea_level(champion):
 
 #print(Alea_level(Cenna))
     </code>
-    <code class="python exo_Python" id="pythonLast">
+    <code class="python exo_Python" id="pythonLast" data-aos="fade-left">
 # Question 3 #
 
 def Equipe_niveau_alea() :
@@ -288,7 +289,7 @@ print(Equipe_niveau_alea2())
 			</div>
 		</div>
 		<div class="divider"></div>
-		<div class="container_company" id="company">
+		<div class="container_company" id="company" data-aos="fade-up-right">
 			<a
 				onclick="openModal(1)"
 				class="modal_a button_modal company has-tooltip-arrow has-tooltip-primary has-tooltip-active"
@@ -440,6 +441,7 @@ print(Equipe_niveau_alea2())
 
 		<script>
 			hljs.initHighlightingOnLoad();
+			AOS.init();
 		</script>
 		<script type="text/javascript" src="./js/all.js"></script>
 		<script type="text/javascript" src="./js/sio.js"></script>

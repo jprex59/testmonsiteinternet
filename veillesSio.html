@@ -14,11 +14,12 @@
 		<link rel="stylesheet" href="./css/bulma-pageloader.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css" type="text/css" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
-
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<title>Mes Veilles</title>
 	</head>
 	<body>
-		<div class="pageloader"><span class="title">Pageloader</span></div>
+		<div class="pageloader"><span class="title">Chargement....</span></div>
 
 		<a href="#veilles" class="up"><i class="fas fa-caret-up"></i></a>
 		<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -66,7 +67,7 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container section is-medium">
+		<div class="container section is-medium" data-aos="zoom-in-right">
 			<article class="message is-dark box">
 				<div class="message-body">
 					<p class="title is-4">Qu'est-ce qu'une veille ?</p>
@@ -95,7 +96,7 @@
 			</ul>
 		</div>
 		<div class="container section containerInformatique">
-			<article class="message">
+			<article class="message" data-aos="fade-right">
 				<div class="message-header">
 					<p>LES SMART CITIES</p>
 				</div>
@@ -122,7 +123,7 @@
 				</div>
 			</article>
 
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor" data-aos="fade-right">
 				<div class="tile is-parent container">
 					<img class="image" src="./img/sio/veilles/techno/img1.jpg" />
 				</div>
@@ -149,7 +150,7 @@
 					</article>
 				</div>
 			</div>
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor" data-aos="fade-left">
 				<div class="tile is-parent is-8">
 					<article class="tile is-child box">
 						<p class="title">SMART CITY : QUAND LES DONNÉES IRRIGUENT LA VILLE</p>
@@ -175,7 +176,7 @@
 					<img class="image" src="./img/sio/veilles/techno/img2.png" />
 				</div>
 			</div>
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor" data-aos="fade-right">
 				<div class="tile is-parent container">
 					<img class="image" src="./img/sio/veilles/techno/img3.jpg" />
 				</div>
@@ -198,7 +199,7 @@
 					</article>
 				</div>
 			</div>
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor" data-aos="fade-left">
 				<div class="tile is-parent is-8">
 					<article class="tile is-child box">
 						<p class="title">Smart city : les avantages de la ville intelligente</p>
@@ -216,7 +217,7 @@
 					<img class="image" src="./img/sio/veilles/techno/img4.png" />
 				</div>
 			</div>
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor" data-aos="fade-right">
 				<div class="tile is-parent container">
 					<img class="image" src="./img/sio/veilles/article.PNG" />
 				</div>
@@ -236,7 +237,7 @@
 					</article>
 				</div>
 			</div>
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor" data-aos="fade-left">
 				<div class="tile is-parent is-8">
 					<article class="tile is-child box">
 						<p class="title">Smart Cities Tour - Arras - NOUVELLE DATE 1er JUIN 2021 !</p>
@@ -256,7 +257,7 @@
 					<img class="image" src="./img/sio/veilles/article.PNG" />
 				</div>
 			</div>
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor" data-aos="fade-right">
 				<div class="tile is-parent container">
 					<img class="image" src="./img/sio/veilles/article.PNG" />
 				</div>
@@ -274,7 +275,7 @@
 					</article>
 				</div>
 			</div>
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor" data-aos="fade-left">
 				<div class="tile is-parent is-8">
 					<article class="tile is-child box">
 						<p class="title">La ville intelligente (smart city)</p>
@@ -294,7 +295,7 @@
 					<img class="image" src="./img/sio/veilles/techno/img8.png" />
 				</div>
 			</div>
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor" data-aos="fade-right">
 				<div class="tile is-parent container">
 					<img class="image" src="./img/sio/veilles/article.PNG" />
 				</div>
@@ -310,7 +311,7 @@
 					</article>
 				</div>
 			</div>
-			<div class="tile is-ancestor">
+			<div class="tile is-ancestor" data-aos="fade-down-left">
 				<div class="tile is-parent is-8">
 					<article class="tile is-child box">
 						<p class="title">Smart City Index 2020</p>
@@ -448,7 +449,9 @@
 
 		<script>
 			hljs.initHighlightingOnLoad();
+			AOS.init();
 		</script>
+
 		<script type="text/javascript" src="./js/all.js"></script>
 		<script type="text/javascript" src="./js/veillesSio.js"></script>
 	</body>

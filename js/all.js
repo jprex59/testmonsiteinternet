@@ -1,3 +1,11 @@
+const pageloader = document.querySelector(".pageloader");
+window.addEventListener("beforeunload", () => {
+	pageloader.classList.add("is-active");
+});
+window.addEventListener("load", () => {
+	pageloader.classList.remove("is-active");
+});
+
 document.addEventListener("DOMContentLoaded", () => {
 	// Get all "navbar-burger" elements
 	const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"), 0);

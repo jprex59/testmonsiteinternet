@@ -70,6 +70,9 @@ strong {
 	right: 20px;
 	z-index: 9;
 }
+.medias {
+	position: relative;
+}
 
 .fab {
 	font-size: 40px;

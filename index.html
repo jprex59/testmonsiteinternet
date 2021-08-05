@@ -10,7 +10,11 @@
 		<link rel="stylesheet" href="./css/bulma-pageloader.min.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 		<script src="https://kit.fontawesome.com/b8f4ab5226.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 
 		<title>home</title>
 	</head>
@@ -80,14 +84,14 @@
 		</div>
 		<div class="container section is-medium" id="informations">
 			<div class="tile is-ancestor container-tiles">
-				<div class="tile is-parent">
+				<div class="tile is-parent" data-aos="zoom-in-right">
 					<article class="tile is-child box">
 						<p class="title"><i class="fas fa-user-tie icon"></i> Experiences</p>
 						<p class="subtitle is-3" id="experience"><strong>2 ans</strong></p>
 					</article>
 				</div>
 
-				<div class="tile is-parent">
+				<div class="tile is-parent" data-aos="zoom-in-right">
 					<article class="tile is-child box">
 						<p class="title"><i class="fas fa-language"></i> Langues</p>
 						<div class="content-ul">
@@ -104,7 +108,7 @@
 						</div>
 					</article>
 				</div>
-				<div class="tile is-parent">
+				<div class="tile is-parent" data-aos="zoom-in-right">
 					<article class="tile is-child box">
 						<p class="title"><i class="fas fa-info-circle"></i> Plus</p>
 						<div class="content-ul contentMore">
@@ -125,7 +129,7 @@
 						</div>
 					</article>
 				</div>
-				<div class="tile is-parent">
+				<div class="tile is-parent" data-aos="zoom-in-right">
 					<article class="tile is-child box">
 						<p class="title"><i class="fas fa-user-tie"></i> Situation</p>
 						<div class="content"><strong>Septembre</strong> : Licence d'informatique en alternance chez SCAPARTOIS</div>
@@ -133,7 +137,7 @@
 				</div>
 			</div>
 			<div class="tile is-ancestor">
-				<div class="tile is-parent">
+				<div class="tile is-parent" data-aos="zoom-in-right">
 					<article class="tile is-child box">
 						<p class="title"><i class="fas fa-graduation-cap"></i> Derniers diplômes</p>
 						<div class="content">
@@ -144,7 +148,7 @@
 						</div>
 					</article>
 				</div>
-				<div class="tile is-parent is-6">
+				<div class="tile is-parent is-6" data-aos="zoom-in-right">
 					<article class="tile is-child box">
 						<p class="title"><i class="fas fa-graduation-cap"></i> Certificats</p>
 						<div class="content">
@@ -155,7 +159,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container" id="contact">
+		<div class="container" id="contact" data-aos="fade-up">
 			<iframe
 				src="https://docs.google.com/forms/d/e/1FAIpQLScyq-WIC_sl0SWD0m3IDkmU6NEC5CiIXKMEnZdhx162KAlB8A/viewform?embedded=true"
 				width="100%"
@@ -169,8 +173,11 @@
 		<div class="footer-own">
 			<p>&copy; 25 / 07 / 2021</p>
 		</div>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 		<script type="text/javascript" src="./js/index.js"></script>
 		<script type="text/javascript" src="./js/all.js"></script>
+
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>

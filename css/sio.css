@@ -285,6 +285,9 @@ pre {
 .card_own .subtitle:hover {
 	opacity: 1;
 }
+.modal-card-body p {
+	text-align: justify;
+}
 
 @media all and (max-width: 875px) {
 	.card_own {

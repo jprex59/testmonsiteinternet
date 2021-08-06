@@ -249,7 +249,7 @@ pre {
 }
 
 .card_own:hover {
-	border-bottom: 5px solid /*#19d6ba*/ #3273dc;
+	border-bottom: 5px solid /*#19d6ba*/ #3298dc;
 	box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
 	background-color: #ffffff;
 }
@@ -274,7 +274,7 @@ pre {
 
 .card_own .subtitle {
 	font-weight: 500;
-	color: /*#19d6ba*/ #3273dc;
+	color: /*#19d6ba*/ #3298dc;
 	background-color: rgba(255, 255, 255, 0);
 	opacity: 0;
 	transition: all 0.5s;

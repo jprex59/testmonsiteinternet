@@ -63,3 +63,7 @@ body {
 .message-body {
 	text-align: justify;
 }
+
+.pageloader {
+	background: #3298dc !important;
+}

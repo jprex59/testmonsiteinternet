@@ -179,7 +179,7 @@ strong {
 		right: 12px;
 	}
 }
-@media (orientation: landscape) {
+@media all and (max-height: 500px) {
 	.bg {
 		clip-path: circle(40% at 120% 100%);
 	}

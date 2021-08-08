@@ -67,3 +67,8 @@ body {
 .pageloader {
 	background: #3298dc !important;
 }
+@media screen and (max-width: 1023px) {
+	.navbar-menu {
+		padding: 2rem 0 !important;
+	}
+}

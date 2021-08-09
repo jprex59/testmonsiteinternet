@@ -11,7 +11,9 @@ body {
 	position: relative;
 	overflow: hidden;
 }
-
+#SectionName {
+	margin-bottom: 0 !important;
+}
 .fa-github {
 	color: black !important;
 	font-size: 25px !important;
@@ -67,8 +69,18 @@ body {
 .pageloader {
 	background: #3298dc !important;
 }
-@media screen and (max-width: 1023px) {
-	.navbar-menu {
-		padding: 2rem 0 !important;
-	}
+.up {
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	color: #000000;
+	z-index: 99999;
+	font-size: 40px;
+}
+.hero_ul {
+	display: flex;
+	justify-content: center !important;
+}
+.is-active {
+	color: #3e8ed0 !important;
 }

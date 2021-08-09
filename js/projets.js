@@ -1,25 +1,17 @@
-bulmaCarousel.attach("#carousel-demo", {
-	slidesToScroll: 1,
-	slidesToShow: 2,
-	loop: true,
-	/*infinite : true*/
-}); // Initialize all div with carousel class
+/*******************************/
+let Sites = document.getElementById("Sites");
+let Extensions = document.getElementById("Extensions");
 
-var carousels = bulmaCarousel.attach(".carousel", options);
+/*****container****/
+let containerSites = document.querySelector(".containerSites");
+let containerExtensions = document.querySelector(".containerExtensions");
 
-// Loop on each carousel initialized
-for (var i = 0; i < carousels.length; i++) {
-	// Add listener to  event
-	carousels[i].on("before:show", (state) => {
-		console.log(state);
-	});
-}
+Extensions.addEventListener("click", () => {
+	Extensions.classList.add("is-active");
+	Sites.classList.remove("is-active");
+});
 
-// Access to bulmaCarousel instance of an element
-var element = document.querySelector("#my-element");
-if (element && element.bulmaCarousel) {
-	// bulmaCarousel instance is available as element.bulmaCarousel
-	element.bulmaCarousel.on("before-show", function (state) {
-		console.log(state);
-	});
-}
+Sites.addEventListener("click", () => {
+	Sites.classList.add("is-active");
+	Extensions.classList.remove("is-active");
+});

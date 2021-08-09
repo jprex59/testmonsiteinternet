@@ -34,7 +34,7 @@ body {
 .image.is-square .has-ratio,
 .image.is-square img {
 	border-radius: 5px;
-	padding: 2px;
+	padding: 5px;
 }
 .home_container {
 	min-height: 100vh;
@@ -78,7 +78,10 @@ body {
 	overflow: hidden;
 	min-width: 400px;
 }
-
+.carousel_item {
+	display: flex;
+	flex-direction: column;
+}
 @media all and (max-width: 820px) {
 	.section_own {
 		padding: 10px;
@@ -103,4 +106,17 @@ body {
 	.infoContainer p {
 		letter-spacing: -1px;
 	}
+}
+/************************/
+
+.fa-play-circle {
+	margin-right: 5px;
+}
+.hero_ul li a {
+	margin-right: 4px;
+	border: solid 2px #fff !important;
+}
+
+.hero_ul li a i {
+	margin-right: 4px;
 }

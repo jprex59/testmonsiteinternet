@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html class="has-navbar-fixed-top" lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
 		<link rel="stylesheet" href="./css/projets.css" />
 		<link rel="stylesheet" href="./css/all.css" />
+
 		<link rel="stylesheet" href="./css/bulma-pageloader.min.css" />
 
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -24,10 +25,12 @@
 	</head>
 	<body>
 		<div class="pageloader"><span class="title">Chargement...</span></div>
+		<a href="#" class="up"><i class="fas fa-caret-up"></i></a>
+		<!----Debut page presentation------->
 		<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
 				<!---faire changer le nom en fonction du titre de la ssection-->
-				<a class="navbar-item title is-4" id="SectionName" href="index.html">Mes projets </a>
+				<a class="navbar-item title is-4" id="SectionName" href="index.html">BTS SIO </a>
 
 				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 					<span aria-hidden="true"></span>
@@ -57,12 +60,11 @@
 						</div>
 					</div>
 					<a href="projets.html" class="navbar-item"> Projets </a>
-
 					<a href="https://github.com/jprex59" class="navbar-item github"><i class="fab fa-github"></i></a>
 
 					<div class="navbar-item">
 						<div class="buttons">
-							<a href="#contact" class="button is-info">
+							<a href="index.html#contact" class="button is-info">
 								<strong>Contact</strong>
 							</a>
 						</div>
@@ -70,8 +72,31 @@
 				</div>
 			</div>
 		</nav>
-		<div class="home_container"></div>
-		<div class="container">
+
+		<section class="hero is-info">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<p class="title">Mes projets personnels</p>
+					<!--<p class="subtitle"></p>-->
+				</div>
+			</div>
+			<div class="hero-foot">
+				<nav class="tabs is-boxed">
+					<div class="container">
+						<ul class="hero_ul">
+							<li id="Sites">
+								<a href="#Sites_Contains"><i class="fas fa-code"></i> Sites Internet</a>
+							</li>
+							<li id="Extensions">
+								<a href="#Extensions_Contains"><i class="fab fa-google"></i> Extension chrome</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</section>
+		<!-------------------->
+		<div class="container containerExtensions">
 			<div class="section_own" data-aos="fade-left" data-aos-duration="1000">
 				<div class="infoContainer box">
 					<i class="fas fa-file-code icon-info"></i>
@@ -80,7 +105,7 @@
 						Une extension permettant d'automatiser des tâches sur des sites internets (présent sur la 1er slide) avec plusieurs profiles
 					</p>
 				</div>
-				<div class="carousel_container_own">
+				<div class="carousel_container_own" id="Extensions_Contains">
 					<!-- Start Carousel -->
 					<div id="carousel-demo" class="carousel">
 						<div class="item-1 image is-4by3">
@@ -146,7 +171,8 @@
 					<!-- End Carousel -->
 				</div>
 			</div>
-
+		</div>
+		<div class="container containerSites" id="Sites_Contains">
 			<div class="section_own" data-aos="fade-left" data-aos-duration="1000">
 				<div class="infoContainer box">
 					<i class="fas fa-file-code icon-info"></i>
@@ -156,23 +182,59 @@
 						<br />
 						<strong>Entrainement personnel/ Projet terminé</strong>
 						<br /><br />
-						<a href="https://jprex59.github.io/compteur-de-points/" class="button is-info">découvrir le site</a>
+						<a href="https://jprex59.github.io/compteur-de-points/" class="button is-info">Découvrir le site</a>
 					</p>
 				</div>
 				<div class="carousel_container_own">
 					<!-- Start Carousel -->
 					<div id="carousel-demo" class="carousel">
-						<div class="item-1 image is-4by3">
-							<img src="./img/projets/Chronopoints/chrome_rkomfqjNxQ.png" />
+						<div class="item-1">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/Chronopoints/chrome_rkomfqjNxQ.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">La page d'acceuil</div>
+								</div>
+							</div>
 						</div>
-						<div class="item-2 image is-4by3">
-							<img src="./img/projets/Chronopoints/chrome_rddfnJ848u.png" />
+						<div class="item-2">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/Chronopoints/chrome_rddfnJ848u.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">La page principale</div>
+								</div>
+							</div>
 						</div>
-						<div class="item-3 image is-4by3">
-							<img src="./img/projets/Chronopoints/chrome_04MJjlfd8W.png" />
+						<div class="item-3">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/Chronopoints/chrome_04MJjlfd8W.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">Le menu</div>
+								</div>
+							</div>
 						</div>
-						<div class="item-4 image is-4by3">
-							<img src="./img/projets/Chronopoints/chrome_N3PZoBOXjd.png" />
+						<div class="item-4">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="./img/projets/Chronopoints/chrome_N3PZoBOXjd.png" alt="Placeholder image" />
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="content has-text-centered">Le "Reset score"</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- End Carousel -->
@@ -185,6 +247,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
 
 		<script type="text/javascript" src="./js/projets.js"></script>
+		<script type="text/javascript" src="./js/carousel.js"></script>
 		<script type="text/javascript" src="./js/all.js"></script>
 		<script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
 

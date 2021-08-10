@@ -31,3 +31,6 @@
 .content p a {
 	margin-top: 10px;
 }
+.content p {
+	text-align: justify !important;
+}

@@ -81,6 +81,19 @@ body {
 	display: flex;
 	justify-content: center !important;
 }
-.is-active {
-	color: #3e8ed0 !important;
+
+.navbar.is-fixed-top {
+	border-bottom: 1px solid #ffffff42 !important;
+}
+
+@media all and (max-width: 1022px) {
+	.button.is-info.is-inverted {
+		background-color: #3298dc !important;
+		color: #fff !important;
+	}
+}
+@media all and (max-width: 300px) {
+	.has-text-justified {
+		font-size: 14px !important;
+	}
 }

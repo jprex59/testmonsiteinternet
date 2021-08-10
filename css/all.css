@@ -92,7 +92,7 @@ body {
 		color: #fff !important;
 	}
 }
-@media all and (max-width: 300px) {
+@media all and (max-width: 350px) {
 	.has-text-justified {
 		font-size: 14px !important;
 	}

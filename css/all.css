@@ -86,10 +86,20 @@ body {
 	border-bottom: 1px solid #ffffff42 !important;
 }
 
-@media all and (max-width: 1022px) {
+@media all and (max-width: 1023px) {
 	.button.is-info.is-inverted {
 		background-color: #3298dc !important;
 		color: #fff !important;
+	}
+	.navbar-menu {
+		display: block !important;
+		height: 0 !important;
+		transition: all 0.5s !important;
+		padding: 0 !important;
+	}
+	.navbar-menu.is-active {
+		height: 350px !important;
+		padding: 0.5rem 0 !important;
 	}
 }
 @media all and (max-width: 350px) {

@@ -204,9 +204,10 @@ strong {
 .title .fas {
 	font-size: 25px;
 	position: absolute;
-	top: 5px;
+	top: 24px;
 	right: 5px;
 	color: #3196d9b7;
+	transition: all 0.5s;
 }
 .fa-mobile-alt {
 	font-size: 18px;
@@ -244,5 +245,10 @@ strong {
 @media all and (max-width: 770px) {
 	#experience {
 		position: initial;
+	}
+}
+@media all and (max-width: 360px) {
+	.title .fas {
+		top: 4px;
 	}
 }

@@ -124,7 +124,7 @@ strong {
 
 @media all and (max-width: 500px) {
 	.bg {
-		clip-path: circle(30% at 120% 100%);
+		clip-path: circle(32% at 120% 100%);
 	}
 
 	.information .subtitle {

@@ -1,5 +1,6 @@
 img {
 	border-radius: 5%;
+	z-index: 2;
 }
 .subject {
 	width: 40%;
@@ -37,6 +38,12 @@ img {
 
 .subject6 {
 	background-color: #0a70b5;
+}
+.subject7 {
+	background-color: #b2b7bd;
+}
+.subject8 {
+	background-color: #0a71b577;
 }
 
 .subject::after {
@@ -86,11 +93,15 @@ img {
 
 @media all and (max-width: 600px) {
 	.subject {
-		width: 90%;
+		width: 280px;
 		min-width: 0px;
 	}
 	.subject-half {
 		width: 100% !important;
+	}
+	.subject::after {
+		top: 80px;
+		clip-path: ellipse(49% 50% at 50% 50%);
 	}
 }
 
@@ -115,7 +126,7 @@ img {
 }
 
 .subject-half span .subtitle {
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 .subject-half span,
 .subject-half span .title,

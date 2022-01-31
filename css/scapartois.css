@@ -116,11 +116,6 @@
 	}
 }
 
-@media all and (max-width: 1380px) {
-	.button_modal {
-		width: 500px;
-	}
-}
 @media all and (max-width: 1100px) {
 	.button_modal {
 		width: 450px;
@@ -308,6 +303,7 @@
 }
 
 /*****skills****/
+/*
 .containerInformatique,
 .containerJuridique {
 	display: none;
@@ -316,7 +312,7 @@
 .open {
 	display: block !important;
 }
-
+*/
 .tabs li.is-active a {
 	color: #3298dc;
 }

@@ -8,7 +8,7 @@ img {
 	min-height: 200px;
 	padding: 5px;
 	margin: 5px;
-	border-radius: 5px;
+	border-radius: 10px;
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
@@ -132,4 +132,20 @@ img {
 .subject-half span .title,
 .subject-half span .subtitle {
 	color: #fff !important;
+	z-index: 3;
+}
+
+.subject-half span .subtitle a,
+.subject-half span a {
+	color: #fff !important;
+	text-underline-offset: 3px;
+	text-decoration: underline #ffffff;
+}
+.subject-half span .subtitle a:hover,
+.subject-half span a:hover {
+	text-decoration: underline rgb(0, 0, 0);
+}
+
+ul {
+	list-style: inside;
 }

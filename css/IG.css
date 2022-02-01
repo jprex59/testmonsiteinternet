@@ -5,15 +5,17 @@ img {
 .subject {
 	width: 40%;
 	min-width: 500px;
-	min-height: 200px;
+	height: 230px;
 	padding: 5px;
-	margin: 5px;
+	margin: 10px;
 	border-radius: 10px;
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
+	box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
 }
 
 .subject1 {
@@ -95,6 +97,7 @@ img {
 	.subject {
 		width: 280px;
 		min-width: 0px;
+		height: 430px;
 	}
 	.subject-half {
 		width: 100% !important;
@@ -102,6 +105,18 @@ img {
 	.subject::after {
 		top: 80px;
 		clip-path: ellipse(49% 50% at 50% 50%);
+	}
+	.cover {
+		border-radius: 50px !important;
+		bottom: -95% !important;
+	}
+	.more {
+		font-size: 14px;
+	}
+	.cover:hover {
+		bottom: 0px !important;
+		border-radius: 10px !important;
+		cursor: default;
 	}
 }
 
@@ -124,7 +139,12 @@ img {
 	align-items: center;
 	justify-content: center;
 }
-
+.subject-half span {
+	width: 100%;
+}
+.subject-half span .title {
+	text-align: center;
+}
 .subject-half span .subtitle {
 	margin-bottom: 10px;
 }
@@ -134,7 +154,9 @@ img {
 	color: #fff !important;
 	z-index: 3;
 }
-
+.subject-half span ul li a {
+	font-size: 15px;
+}
 .subject-half span .subtitle a,
 .subject-half span a {
 	color: #fff !important;
@@ -148,4 +170,65 @@ img {
 
 ul {
 	list-style: inside;
+}
+
+/*******cover*******/
+.cover {
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;
+	border-radius: 75%;
+	position: absolute;
+	left: 0;
+	bottom: -90%;
+	display: flex;
+	justify-content: center;
+	transition: all 0.5s;
+	z-index: 99;
+	background-color: #fafafa;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.more {
+	height: min-content;
+	cursor: pointer;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	text-align: center;
+	transition: opacity 1s;
+}
+
+.fa-chevron-up {
+	transition: all 1s;
+}
+.more:hover .cover {
+	bottom: 0px;
+	border-radius: 10px;
+	cursor: default;
+}
+.cover:hover {
+	bottom: 0px;
+	border-radius: 10px;
+	cursor: default;
+}
+.cover:hover .fa-chevron-up {
+	transform: rotate(540deg);
+}
+.cover:hover .more {
+	opacity: 0;
+}
+
+.more:hover .cover {
+	bottom: 0px;
+	border-radius: 10px;
+	cursor: default;
+}
+
+.coverContent {
+	width: 100%;
+	height: 92%;
+	text-align: justify;
+	padding: 5px;
 }

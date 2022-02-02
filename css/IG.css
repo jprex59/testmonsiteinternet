@@ -113,7 +113,7 @@ img {
 	.more {
 		font-size: 14px;
 	}
-	.cover:hover {
+	.is-active {
 		bottom: 0px !important;
 		border-radius: 10px !important;
 		cursor: default;
@@ -203,24 +203,12 @@ ul {
 .fa-chevron-up {
 	transition: all 1s;
 }
-.more:hover .cover {
-	bottom: 0px;
-	border-radius: 10px;
-	cursor: default;
-}
-.cover:hover {
-	bottom: 0px;
-	border-radius: 10px;
-	cursor: default;
-}
-.cover:hover .fa-chevron-up {
+
+.arrow_is-active {
 	transform: rotate(540deg);
 }
-.cover:hover .more {
-	opacity: 0;
-}
 
-.more:hover .cover {
+.is-active {
 	bottom: 0px;
 	border-radius: 10px;
 	cursor: default;

@@ -222,5 +222,7 @@ ul {
 	width: 100%;
 	height: 92%;
 	text-align: justify;
-	padding: 5px;
+	padding: 0 10px 0px 10px;
+
+	font-size: 13px;
 }

@@ -16,10 +16,12 @@ for (let i = 0; i < more.length; i++) {
 			cover[i].classList.add("is-active");
 			arrow[i].classList.add("arrow_is-active");
 			more[i].classList.add("more-is-active");
+			more[i].style.transition = "background-color 0.7s";
 		} else if (ouverture[[i, 2]] == 0) {
 			cover[i].classList.remove("is-active");
 			arrow[i].classList.remove("arrow_is-active");
 			more[i].classList.remove("more-is-active");
+			more[i].style.transition = "background-color 0s";
 		}
 		console.log(ouverture);
 	});

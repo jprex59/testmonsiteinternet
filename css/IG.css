@@ -185,9 +185,9 @@ ul {
 	justify-content: center;
 	transition: all 0.5s;
 	z-index: 99;
-	background-color: #fafafa;
+	background-color: #ffff;
 	cursor: pointer;
-	transition: all 0.4s;
+	transition: all 0.3s;
 }
 
 .more {
@@ -197,9 +197,13 @@ ul {
 	top: 0px;
 	width: 100%;
 	text-align: center;
-	transition: opacity 1s;
 }
 
+.more-is-active {
+	background-color: #6bb4e4;
+	border-radius: 0 0 50% 50%;
+	color: #fff;
+}
 .fa-chevron-up {
 	transition: all 1s;
 }

@@ -4,7 +4,7 @@ img {
 }
 .subject {
 	width: 40%;
-	min-width: 500px;
+	min-width: 600px;
 	height: 230px;
 	padding: 5px;
 	margin: 10px;
@@ -78,7 +78,7 @@ img {
 @media all and (max-width: 1045px) {
 	.subject {
 		width: 90%;
-		min-width: 0px;
+		min-width: 550px;
 	}
 	.subject::before {
 		width: 70px;
@@ -223,6 +223,6 @@ ul {
 	height: 92%;
 	text-align: justify;
 	padding: 0 10px 0px 10px;
-
+	cursor: auto;
 	font-size: 13px;
 }
